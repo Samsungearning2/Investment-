@@ -1,1 +1,1220 @@
 
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Samsung Earning Platform</title>
+<meta property="og:title" content="SAMSUNG EARNING PLATFORM"/>
+<meta property="og:description" content="Invest in Samsung Packages and Earn Daily Income"/>
+<meta property="og:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bu6q2.jpg"/>
+<meta property="og:url" content="https://samsungearning-55555.web.app"/>
+<meta property="og:type" content="website"/>
+<meta property="og:site_name" content="Samsung Earning Platform"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="SAMSUNG EARNING PLATFORM"/>
+<meta name="twitter:description" content="Invest in Samsung Packages and Earn Daily Income"/>
+<meta name="twitter:image" content="https://cdn-ai.onspace.ai/onspace/project/screenshot/online/pre-site/9bu6q2.jpg"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config={theme:{extend:{colors:{'sb':'#1428A0','sc':'#00B4F0'},fontFamily:{sans:['Inter','sans-serif']}}}}
+</script>
+<style>
+*{box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0e1a;color:#fff;overflow-x:hidden;margin:0}
+.page{display:none}.page.active{display:block}
+.sg{background:linear-gradient(135deg,#1428A0,#00B4F0)}
+.sg-r{background:linear-gradient(135deg,#00B4F0,#1428A0)}
+.gc{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:16px}
+.fade-in{animation:fi .35s ease forwards}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pg{0%,100%{box-shadow:0 0 20px rgba(0,180,240,.3)}50%{box-shadow:0 0 40px rgba(0,180,240,.6)}}
+.spinner{border:3px solid rgba(255,255,255,.1);border-top:3px solid #00B4F0;border-radius:50%;width:28px;height:28px;animation:spin .8s linear infinite;margin:auto}
+.pg{animation:pg 2s infinite}
+input,select,textarea{background:rgba(255,255,255,.08)!important;border:1px solid rgba(255,255,255,.15)!important;color:#fff!important;border-radius:12px;transition:border-color .2s}
+input::placeholder,textarea::placeholder{color:rgba(255,255,255,.35)!important}
+input:focus,select:focus{outline:none!important;border-color:#00B4F0!important;box-shadow:0 0 0 2px rgba(0,180,240,.2)!important}
+.btn{background:linear-gradient(135deg,#1428A0,#00B4F0);transition:opacity .2s,transform .15s;border:none;cursor:pointer}
+.btn:hover{opacity:.9;transform:scale(1.02)}
+.btn:active{transform:scale(.97)}
+.btn:disabled{opacity:.5;cursor:not-allowed;transform:none}
+.scroll-a{height:calc(100vh - 130px);overflow-y:auto;padding-bottom:80px;-webkit-overflow-scrolling:touch}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);z-index:1000;display:flex;align-items:center;justify-content:center;padding:1rem}
+.modal-box{background:#101828;border:1px solid rgba(0,180,240,.25);border-radius:20px;max-width:400px;width:100%;max-height:88vh;overflow-y:auto}
+#toast{position:fixed;top:20px;left:50%;transform:translateX(-50%) translateY(-120px);z-index:9999;transition:transform .3s ease;padding:10px 22px;border-radius:30px;font-weight:600;font-size:13px;text-align:center;max-width:90vw;pointer-events:none}
+#toast.show{transform:translateX(-50%) translateY(0)}
+.pkg-card{transition:transform .3s,box-shadow .3s;border-radius:24px;overflow:hidden}
+.pkg-card:hover{transform:translateY(-3px);box-shadow:0 16px 50px rgba(0,180,240,.18)}
+.stat-card{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.07);border-radius:14px;transition:border-color .3s}
+.stat-card:hover{border-color:rgba(0,180,240,.3)}
+.nav-item .ni{color:#4b5563;transition:color .2s}
+.nav-item .nl{color:#4b5563;transition:color .2s;font-size:11px;font-weight:500}
+.nav-item.act .ni{color:#00B4F0}
+.nav-item.act .nl{color:#00B4F0}
+.at{background:rgba(255,255,255,.05);color:#94A3B8;border:none;cursor:pointer;border-radius:10px;transition:all .2s}
+.at.active{background:linear-gradient(135deg,#1428A0,#00B4F0)!important;color:#fff}
+::-webkit-scrollbar{width:3px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#1428A0;border-radius:2px}
+</style>
+</head>
+<body>
+
+<!-- LOADING -->
+<div id="ls" style="position:fixed;inset:0;z-index:9999;background:#0a0e1a;display:flex;align-items:center;justify-content:center">
+  <div style="text-align:center">
+    <div class="sg pg" style="width:72px;height:72px;border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px"><span style="font-size:32px;font-weight:900;color:#fff">S</span></div>
+    <p style="font-weight:800;font-size:18px;color:#fff;margin:0">SAMSUNG</p>
+    <p style="color:#00B4F0;font-weight:600;font-size:13px;margin:4px 0 16px">EARNING PLATFORM</p>
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast"></div>
+
+<!-- ===== AUTH SECTION ===== -->
+<div id="auth-sec" style="display:none;min-height:100vh;background:linear-gradient(160deg,#0a0e1a 0%,#0d1a3a 50%,#0a0e1a 100%)">
+  <div style="position:relative;padding:48px 0 24px;text-align:center">
+    <button id="flower-btn" onclick="showAdminLogin()" style="position:absolute;top:12px;right:14px;background:none;border:none;cursor:pointer;font-size:22px;opacity:.15;color:#0a0e1a" title=" ">🌸</button>
+    <div class="sg pg" style="width:72px;height:72px;border-radius:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px;box-shadow:0 0 40px rgba(0,180,240,.4)"><span style="font-size:30px;font-weight:900;color:#fff">S</span></div>
+    <p style="font-weight:900;font-size:22px;color:#fff;margin:0;letter-spacing:2px">SAMSUNG</p>
+    <p style="color:#00B4F0;font-weight:700;font-size:12px;margin:2px 0">EARNING PLATFORM</p>
+  </div>
+
+  <div style="padding:0 20px 40px;max-width:400px;margin:0 auto">
+    <!-- Tab switcher -->
+    <div style="display:flex;background:rgba(255,255,255,.05);border-radius:14px;padding:4px;margin-bottom:22px">
+      <button id="tab-login" onclick="switchTab(&#39;login&#39;)" class="btn" style="flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#fff">Login</button>
+      <button id="tab-reg" onclick="switchTab(&#39;reg&#39;)" style="flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#6b7280;background:none;border:none;cursor:pointer;transition:color .2s">Register</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="f-login">
+      <div style="margin-bottom:14px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Phone Number</label>
+        <div style="position:relative;margin-top:6px">
+          <i class="fas fa-phone" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i>
+          <input type="tel" id="l-phone" placeholder="07XXXXXXXX" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/>
+        </div>
+      </div>
+      <div style="margin-bottom:14px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Password</label>
+        <div style="position:relative;margin-top:6px">
+          <i class="fas fa-lock" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i>
+          <input type="password" id="l-pass" placeholder="Enter password" style="width:100%;padding:14px 40px 14px 40px;font-size:14px"/>
+          <button onclick="togglePw(&#39;l-pass&#39;,&#39;l-eye&#39;)" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#6b7280"><i class="fas fa-eye" id="l-eye"></i></button>
+        </div>
+      </div>
+      <label style="display:flex;align-items:center;gap:8px;cursor:pointer;margin-bottom:18px">
+        <input type="checkbox" id="remember" style="width:16px;height:16px;accent-color:#00B4F0"/>
+        <span style="font-size:13px;color:#9CA3AF">Remember me with Google</span>
+      </label>
+      <button id="l-btn" onclick="doLogin()" class="btn" style="width:100%;padding:15px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;margin-bottom:16px"><i class="fas fa-sign-in-alt" style="margin-right:8px"></i>Login</button>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.1)"></div><span style="font-size:12px;color:#4b5563">OR</span><div style="flex:1;height:1px;background:rgba(255,255,255,.1)"></div></div>
+      <button onclick="doGoogle()" style="width:100%;padding:14px;border-radius:14px;font-weight:700;font-size:14px;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .2s">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path></svg>
+        Continue with Google
+      </button>
+    </div>
+
+    <!-- Register Form -->
+    <div id="f-reg" style="display:none">
+      <div style="margin-bottom:14px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Full Name</label>
+        <div style="position:relative;margin-top:6px"><i class="fas fa-user" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="text" id="r-name" placeholder="Your full name" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/></div>
+      </div>
+      <div style="margin-bottom:14px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Phone Number</label>
+        <div style="position:relative;margin-top:6px"><i class="fas fa-phone" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="tel" id="r-phone" placeholder="07XXXXXXXX" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/></div>
+      </div>
+      <div style="margin-bottom:6px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Password</label>
+        <div style="position:relative;margin-top:6px"><i class="fas fa-lock" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="password" id="r-pass" placeholder="Create a memorable password" style="width:100%;padding:14px 40px 14px 40px;font-size:14px"/><button onclick="togglePw(&#39;r-pass&#39;,&#39;r-eye&#39;)" style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#6b7280"><i class="fas fa-eye" id="r-eye"></i></button></div>
+        <p style="font-size:11px;color:#6b7280;margin:4px 0 10px">Create a password you will be able to remember</p>
+      </div>
+      <div style="margin-bottom:18px">
+        <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Referral Code (Optional)</label>
+        <div style="position:relative;margin-top:6px"><i class="fas fa-link" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="text" id="r-ref" placeholder="Enter referral code" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/></div>
+      </div>
+      <button id="r-btn" onclick="doRegister()" class="btn" style="width:100%;padding:15px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;margin-bottom:16px"><i class="fas fa-user-plus" style="margin-right:8px"></i>Create Account</button>
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px"><div style="flex:1;height:1px;background:rgba(255,255,255,.1)"></div><span style="font-size:12px;color:#4b5563">OR</span><div style="flex:1;height:1px;background:rgba(255,255,255,.1)"></div></div>
+      <button onclick="doGoogle()" style="width:100%;padding:14px;border-radius:14px;font-weight:700;font-size:14px;color:#fff;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.13);cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px">
+        <svg width="18" height="18" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"></path><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"></path><path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"></path><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"></path></svg>
+        Register with Google
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MODALS ===== -->
+
+<!-- Admin Login Modal -->
+<div id="m-admin" class="modal-bg" style="display:none">
+  <div class="modal-box" style="padding:28px;max-width:340px">
+    <div style="text-align:center;margin-bottom:22px">
+      <div class="sg" style="width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px"><i class="fas fa-shield-alt" style="color:#fff;font-size:22px"></i></div>
+      <h2 style="font-weight:800;font-size:18px;color:#fff;margin:0">Admin Access</h2>
+      <p style="color:#9CA3AF;font-size:13px;margin:4px 0 0">Secure administrator login</p>
+    </div>
+    <input type="text" id="a-name" placeholder="Admin Name" style="width:100%;padding:13px;margin-bottom:12px;font-size:14px"/>
+    <div style="position:relative;margin-bottom:16px"><input type="password" id="a-pass" placeholder="Admin Password" style="width:100%;padding:13px 42px 13px 13px;font-size:14px"/><button onclick="togglePw(&#39;a-pass&#39;,&#39;a-eye&#39;)" style="position:absolute;right:13px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#6b7280"><i class="fas fa-eye" id="a-eye"></i></button></div>
+    <button onclick="doAdminLogin()" class="btn" style="width:100%;padding:13px;border-radius:12px;font-weight:800;color:#fff;font-size:14px;margin-bottom:10px"><i class="fas fa-lock-open" style="margin-right:8px"></i>Enter Admin Panel</button>
+    <button onclick="closeM(&#39;m-admin&#39;)" style="width:100%;padding:12px;border-radius:12px;background:rgba(255,255,255,.05);border:none;color:#9CA3AF;font-weight:600;cursor:pointer;font-size:14px">Cancel</button>
+  </div>
+</div>
+
+<!-- Welcome Modal -->
+<div id="m-welcome" class="modal-bg" style="display:none">
+  <div class="modal-box" style="padding:28px;text-align:center;max-width:340px">
+    <div class="sg pg" style="width:72px;height:72px;border-radius:22px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px"><span style="font-size:28px;font-weight:900;color:#fff">S</span></div>
+    <h2 style="font-weight:900;font-size:20px;color:#fff;margin:0 0 4px">Welcome to</h2>
+    <p style="font-weight:800;font-size:16px;color:#00B4F0;margin:0 0 16px">SAMSUNG EARNING PLATFORM</p>
+    <div style="background:rgba(0,180,240,.1);border:1px solid rgba(0,180,240,.3);border-radius:14px;padding:16px;margin-bottom:14px">
+      <p style="color:#4ade80;font-weight:800;font-size:18px;margin:0 0 4px">🎁 +7,000 UGX Bonus!</p>
+      <p style="color:#D1D5DB;font-size:12px;margin:0">Added to your wallet as a welcome gift</p>
+      <p style="color:#FBBF24;font-size:11px;margin:6px 0 0">*Buy a package first to unlock withdrawal</p>
+    </div>
+    <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">Start earning daily with Samsung investment packages!</p>
+    <button onclick="closeWelcome()" class="btn" style="width:100%;padding:15px;border-radius:14px;font-weight:800;font-size:16px;color:#fff">OK – Let&#39;s Go! 🚀</button>
+  </div>
+</div>
+
+<!-- Rules Modal -->
+<div id="m-rules" class="modal-bg" style="display:none">
+  <div class="modal-box" style="padding:24px;max-width:380px">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+      <div class="sg" style="width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-book" style="color:#fff;font-size:16px"></i></div>
+      <div><h2 style="font-weight:800;font-size:17px;color:#fff;margin:0">Platform Rules</h2><p style="color:#9CA3AF;font-size:12px;margin:0">Please read carefully</p></div>
+    </div>
+    <div style="max-height:340px;overflow-y:auto;padding-right:4px">
+      <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px"><p style="color:#00B4F0;font-weight:700;font-size:12px;margin:0 0 6px">1. DAILY BONUS</p><p style="color:#D1D5DB;font-size:12px;margin:0">Check in daily to get <span style="color:#4ade80;font-weight:700">+100 UGX</span> in Mine page</p></div>
+      <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px"><p style="color:#00B4F0;font-weight:700;font-size:12px;margin:0 0 6px">2. REFERRAL EARNINGS</p><p style="color:#D1D5DB;font-size:12px;margin:0">L1 Direct: <b style="color:#4ade80">30%</b> unlimited<br/>L2: <b style="color:#4ade80">2%</b> on 1st of L1<br/>L3: <b style="color:#4ade80">1%</b> on 1st of L2<br/><span style="color:#9CA3AF;font-size:11px">*Commission paid after package purchase, credited instantly</span></p></div>
+      <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px"><p style="color:#00B4F0;font-weight:700;font-size:12px;margin:0 0 6px">3. PAYMENT &amp; WITHDRAWAL</p><p style="color:#D1D5DB;font-size:12px;margin:0">• Min withdrawal: <b style="color:#4ade80">7,000 UGX</b><br/>• Tax: <b style="color:#FBBF24">18%</b> deducted<br/>• Limit: <b>2 times/day</b><br/>• Processing: <b>2–24 hours</b></p></div>
+      <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px;margin-bottom:10px"><p style="color:#00B4F0;font-weight:700;font-size:12px;margin:0 0 6px">4. PACKAGE PURCHASE</p><p style="color:#D1D5DB;font-size:12px;margin:0">After submitting your payment number, company payment number appears for <b style="color:#FBBF24">15 minutes only</b>. Pay within this time.</p></div>
+      <div style="background:rgba(255,255,255,.05);border-radius:12px;padding:12px"><p style="color:#00B4F0;font-weight:700;font-size:12px;margin:0 0 6px">5. GENERAL</p><p style="color:#D1D5DB;font-size:12px;margin:0">• 1 account per person<br/>• Fake payments = <span style="color:#f87171;font-weight:700">Ban</span><br/>• Fake referrals = <span style="color:#f87171;font-weight:700">Ban</span></p></div>
+    </div>
+    <button onclick="closeRules()" class="btn" style="width:100%;padding:14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;margin-top:16px">I Understand – OK</button>
+  </div>
+</div>
+
+<!-- Payment Timer Modal -->
+<div id="m-pay" class="modal-bg" style="display:none">
+  <div class="modal-box" style="padding:24px;max-width:360px">
+    <div style="text-align:center;margin-bottom:16px">
+      <div style="width:52px;height:52px;background:rgba(34,197,94,.15);border:1px solid rgba(34,197,94,.3);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px"><i class="fas fa-money-bill-wave" style="color:#4ade80;font-size:22px"></i></div>
+      <h3 style="font-weight:800;font-size:18px;color:#fff;margin:0">Pay Now</h3>
+      <p style="color:#9CA3AF;font-size:13px;margin:4px 0 0">Send money to this company number</p>
+    </div>
+    <div id="pay-details" style="background:rgba(0,180,240,.1);border:1px solid rgba(0,180,240,.3);border-radius:14px;padding:16px;text-align:center;margin-bottom:14px"></div>
+    <div style="margin-bottom:14px">
+      <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:6px"><span style="color:#9CA3AF">Time Remaining</span><span id="t-disp" style="color:#FBBF24;font-weight:800;font-size:14px">15:00</span></div>
+      <div style="height:8px;background:rgba(255,255,255,.1);border-radius:4px;overflow:hidden"><div id="t-bar" style="height:100%;border-radius:4px;background:linear-gradient(90deg,#00B4F0,#1428A0);width:100%;transition:width .5s linear"></div></div>
+      <p style="color:#6b7280;font-size:11px;text-align:center;margin:6px 0 0">Number disappears after 15 minutes</p>
+    </div>
+    <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25);border-radius:12px;padding:12px;margin-bottom:14px"><p style="color:#FBBF24;font-size:12px;text-align:center;margin:0"><i class="fas fa-info-circle" style="margin-right:4px"></i>After payment, wait for Admin approval. Package activates automatically.</p></div>
+    <button onclick="closePayModal()" style="width:100%;padding:13px;border-radius:12px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:#9CA3AF;font-weight:600;cursor:pointer;font-size:14px">Close (I will pay later)</button>
+  </div>
+</div>
+
+<!-- ===== MAIN APP ===== -->
+<div id="app-sec" style="display:none">
+  <!-- Header -->
+  <div style="position:sticky;top:0;z-index:40;background:rgba(10,14,26,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.06);padding:10px 16px">
+    <div style="display:flex;align-items:center;justify-content:space-between;max-width:480px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div class="sg" style="width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="font-weight:900;color:#fff;font-size:16px">S</span></div>
+        <div><p id="h-title" style="font-weight:800;font-size:13px;color:#fff;margin:0;line-height:1.2">SAMSUNG EARNING</p><p style="color:#00B4F0;font-size:11px;margin:0;font-weight:600">Earning Platform</p></div>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="text-align:right"><p style="font-size:11px;color:#6b7280;margin:0">Wallet</p><p id="h-wallet" style="font-size:13px;font-weight:800;color:#4ade80;margin:0">0 UGX</p></div>
+        <button onclick="doLogout()" style="width:34px;height:34px;border-radius:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.08);color:#9CA3AF;cursor:pointer;font-size:12px"><i class="fas fa-sign-out-alt"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav arrows -->
+  <div style="position:fixed;bottom:74px;left:0;right:0;z-index:30;display:flex;justify-content:space-between;padding:0 12px;pointer-events:none;max-width:480px;margin:0 auto">
+    <button onclick="navPrev()" style="width:38px;height:38px;border-radius:50%;background:rgba(20,40,160,.8);border:1px solid rgba(0,180,240,.4);color:#fff;cursor:pointer;pointer-events:auto;font-size:11px;backdrop-filter:blur(8px)"><i class="fas fa-chevron-left"></i></button>
+    <button onclick="navNext()" style="width:38px;height:38px;border-radius:50%;background:rgba(20,40,160,.8);border:1px solid rgba(0,180,240,.4);color:#fff;cursor:pointer;pointer-events:auto;font-size:11px;backdrop-filter:blur(8px)"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Pages -->
+  <div style="max-width:480px;margin:0 auto">
+
+    <!-- HOME -->
+    <div id="page-home" class="page active scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 2px">Good day,</p>
+        <h2 id="h-name" style="font-weight:800;font-size:20px;color:#fff;margin:0 0 16px">User</h2>
+        <div class="sg" style="border-radius:22px;padding:22px;margin-bottom:18px;position:relative;overflow:hidden">
+          <div style="position:absolute;width:100px;height:100px;background:rgba(255,255,255,.12);border-radius:50%;top:-30px;right:-20px"></div>
+          <p style="color:rgba(255,255,255,.7);font-size:12px;margin:0 0 4px">Total Wallet Balance</p>
+          <p id="s-wallet" style="font-weight:900;font-size:28px;color:#fff;margin:0 0 14px">0 UGX</p>
+          <div style="display:flex;gap:10px">
+            <button onclick="showPage(&#39;buy&#39;)" style="background:rgba(255,255,255,.2);border:none;border-radius:10px;padding:8px 14px;color:#fff;font-weight:700;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px"><i class="fas fa-shopping-bag"></i>Buy Package</button>
+            <button onclick="showPage(&#39;withdraw&#39;)" style="background:rgba(255,255,255,.2);border:none;border-radius:10px;padding:8px 14px;color:#fff;font-weight:700;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:6px"><i class="fas fa-wallet"></i>Withdraw</button>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px">
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(0,180,240,.15);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-sun" style="color:#00B4F0;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Today</span></div><p id="s-today" style="font-weight:800;font-size:15px;color:#fff;margin:0">0 UGX</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Earnings Today</p></div>
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(34,197,94,.15);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-chart-line" style="color:#4ade80;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Total</span></div><p id="s-total" style="font-weight:800;font-size:15px;color:#fff;margin:0">0 UGX</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Total Earned</p></div>
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(245,158,11,.15);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-boxes" style="color:#FBBF24;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Active</span></div><p id="s-active" style="font-weight:800;font-size:15px;color:#fff;margin:0">0</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Active Packages</p></div>
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(168,85,247,.15);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-users" style="color:#c084fc;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Referral</span></div><p id="s-ref" style="font-weight:800;font-size:15px;color:#fff;margin:0">0 UGX</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Referral Earned</p></div>
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(239,68,68,.15);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-arrow-up" style="color:#f87171;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Withdrawn</span></div><p id="s-withdrawn" style="font-weight:800;font-size:15px;color:#fff;margin:0">0 UGX</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Total Withdrawn</p></div>
+          <div class="stat-card" style="padding:14px"><div style="display:flex;align-items:center;gap:8px;margin-bottom:8px"><div style="width:30px;height:30px;background:rgba(20,40,160,.3);border-radius:8px;display:flex;align-items:center;justify-content:center"><i class="fas fa-layer-group" style="color:#00B4F0;font-size:12px"></i></div><span style="font-size:11px;color:#9CA3AF">Invested</span></div><p id="s-invested" style="font-weight:800;font-size:15px;color:#fff;margin:0">0 UGX</p><p style="font-size:10px;color:#6b7280;margin:2px 0 0">Total Invested</p></div>
+        </div>
+        <div style="margin-bottom:16px"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">Active Packages</h3><div id="active-pkgs"></div></div>
+        <a href="https://t.me/+adk1usHyKF4yYzQ0" target="_blank" style="display:flex;align-items:center;gap:12px;padding:14px;border-radius:14px;background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);text-decoration:none;margin-bottom:8px">
+          <div style="width:38px;height:38px;background:rgba(0,180,240,.15);border-radius:10px;display:flex;align-items:center;justify-content:center"><i class="fab fa-telegram" style="color:#00B4F0;font-size:18px"></i></div>
+          <div style="flex:1"><p style="color:#fff;font-weight:700;font-size:13px;margin:0">Need Help?</p><p style="color:#9CA3AF;font-size:12px;margin:0">Join Telegram Support</p></div>
+          <span style="color:#00B4F0;font-size:12px;font-weight:700">Join →</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- REFERRAL PAGE -->
+    <div id="page-referral" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">Referral Program</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">Earn by inviting friends</p>
+        <div class="gc" style="padding:16px;margin-bottom:16px">
+          <p style="color:#9CA3AF;font-size:11px;margin:0 0 6px">Your Referral Link</p>
+          <div style="display:flex;align-items:center;gap:8px;margin-bottom:6px">
+            <p id="ref-link" style="color:#fff;font-size:11px;font-family:monospace;flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;margin:0">Loading...</p>
+            <button onclick="copyRef()" class="btn" style="padding:8px 14px;border-radius:10px;font-size:12px;font-weight:700;color:#fff;flex-shrink:0">Copy</button>
+          </div>
+          <p style="color:#6b7280;font-size:12px;margin:0">Code: <span id="ref-code" style="color:#00B4F0;font-weight:700">---</span></p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px">
+          <div style="text-align:center;padding:14px;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);border-radius:14px"><p style="color:#FBBF24;font-weight:900;font-size:22px;margin:0">30%</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L1 Direct</p><p style="color:#FBBF24;font-size:10px;margin:0">Unlimited</p></div>
+          <div style="text-align:center;padding:14px;background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);border-radius:14px"><p style="color:#00B4F0;font-weight:900;font-size:22px;margin:0">2%</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L2</p><p style="color:#00B4F0;font-size:10px;margin:0">1st of L1</p></div>
+          <div style="text-align:center;padding:14px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:14px"><p style="color:#4ade80;font-weight:900;font-size:22px;margin:0">1%</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L3</p><p style="color:#4ade80;font-size:10px;margin:0">1st of L2</p></div>
+        </div>
+        <div class="gc" style="padding:16px;margin-bottom:16px">
+          <h3 style="font-weight:700;font-size:14px;color:#fff;margin:0 0 12px">Referral Earnings</h3>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:#9CA3AF;font-size:13px">Total Referral Earnings</span><span id="ref-earn" style="color:#4ade80;font-weight:800;font-size:13px">0 UGX</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:#9CA3AF;font-size:13px">Direct Referrals (L1)</span><span id="ref-l1" style="color:#fff;font-weight:600;font-size:13px">0 people</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:#9CA3AF;font-size:13px">L2 Team</span><span id="ref-l2" style="color:#fff;font-weight:600;font-size:13px">0 people</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#9CA3AF;font-size:13px">L3 Team</span><span id="ref-l3" style="color:#fff;font-weight:600;font-size:13px">0 people</span></div>
+        </div>
+        <button onclick="shareRef()" class="btn" style="width:100%;padding:14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:14px"><i class="fas fa-share-alt"></i>Share My Referral Link</button>
+        <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:12px"><p style="color:#FBBF24;font-size:12px;font-weight:600;margin:0 0 4px"><i class="fas fa-info-circle" style="margin-right:4px"></i>Important Note</p><p style="color:#9CA3AF;font-size:12px;margin:0">Commission only earned when referred person buys a package. Credited instantly – withdraw immediately.</p></div>
+      </div>
+    </div>
+
+    <!-- MINE PAGE -->
+    <div id="page-mine" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">My Account</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">Profile &amp; Daily Rewards</p>
+        <div class="gc" style="padding:16px;margin-bottom:16px;display:flex;align-items:center;gap:14px">
+          <div class="sg" style="width:60px;height:60px;border-radius:18px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span id="m-avatar" style="font-size:26px;font-weight:900;color:#fff">U</span></div>
+          <div><p id="m-name" style="font-weight:800;font-size:17px;color:#fff;margin:0">User</p><p id="m-phone" style="color:#9CA3AF;font-size:13px;margin:2px 0">---</p><p style="color:#4ade80;font-size:11px;margin:0">✓ Active Member</p></div>
+        </div>
+        <!-- Daily Check-in -->
+        <div style="background:rgba(255,215,0,.07);border:1px solid rgba(255,215,0,.2);border-radius:16px;padding:16px;margin-bottom:14px;display:flex;align-items:center;justify-content:space-between">
+          <div><h3 style="font-weight:700;font-size:14px;color:#fff;margin:0">Daily Check-In</h3><p style="color:#9CA3AF;font-size:12px;margin:4px 0">Claim +100 UGX every 24 hours</p><p id="ci-status" style="color:#00B4F0;font-size:12px;margin:0">Check now to earn</p></div>
+          <button id="ci-btn" onclick="doCheckIn()" class="btn" style="padding:10px 18px;border-radius:12px;font-weight:800;font-size:13px;color:#fff;flex-shrink:0">Check In</button>
+        </div>
+        <!-- Redeem Gift -->
+        <div style="background:rgba(168,85,247,.07);border:1px solid rgba(168,85,247,.2);border-radius:16px;padding:16px;margin-bottom:14px">
+          <h3 style="font-weight:700;font-size:14px;color:#fff;margin:0 0 4px">Redeem Gift Code</h3>
+          <p id="rd-status" style="color:#9CA3AF;font-size:12px;margin:0 0 10px">Currently closed. Watch for announcements.</p>
+          <div id="rd-input" style="display:none">
+            <div style="display:flex;gap:8px"><input type="text" id="gift-input" placeholder="Enter gift code..." style="flex:1;padding:12px;font-size:13px"/><button onclick="doRedeem()" class="btn" style="padding:12px 16px;border-radius:12px;font-weight:700;font-size:13px;color:#fff">Claim</button></div>
+            <p id="rd-timer" style="color:#c084fc;font-size:12px;margin:6px 0 0">Window open!</p>
+          </div>
+        </div>
+        <!-- My Products -->
+        <div style="margin-bottom:16px"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">My Products</h3><div id="my-products"></div></div>
+        <!-- Account Summary -->
+        <div class="gc" style="padding:16px;margin-bottom:14px">
+          <h3 style="font-weight:700;font-size:14px;color:#fff;margin:0 0 12px">Account Summary</h3>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:#9CA3AF;font-size:13px">Member Since</span><span id="m-since" style="color:#fff;font-size:13px">---</span></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px"><span style="color:#9CA3AF;font-size:13px">Total Packages Bought</span><span id="m-pkgs" style="color:#fff;font-size:13px">0</span></div>
+          <div style="display:flex;justify-content:space-between"><span style="color:#9CA3AF;font-size:13px">Total Invested</span><span id="m-invested" style="color:#4ade80;font-weight:700;font-size:13px">0 UGX</span></div>
+        </div>
+        <a href="https://t.me/+kH7QuzE6dp0xZmVk" target="_blank" style="display:flex;align-items:center;gap:12px;padding:14px;border-radius:14px;background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);text-decoration:none">
+          <i class="fab fa-telegram" style="color:#00B4F0;font-size:22px"></i>
+          <div><p style="color:#fff;font-weight:700;font-size:13px;margin:0">Customer Chart Group</p><p style="color:#9CA3AF;font-size:12px;margin:0">Join our community</p></div>
+          <i class="fas fa-external-link-alt" style="color:#6b7280;font-size:11px;margin-left:auto"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- SUPPORT PAGE -->
+    <div id="page-support" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">Customer Support</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">We&#39;re here to help 24/7</p>
+        <div style="background:linear-gradient(135deg,rgba(0,180,240,.15),rgba(20,40,160,.3));border:1px solid rgba(0,180,240,.3);border-radius:22px;padding:24px;text-align:center;margin-bottom:16px">
+          <div style="width:70px;height:70px;background:rgba(0,180,240,.2);border-radius:20px;display:flex;align-items:center;justify-content:center;margin:0 auto 14px"><i class="fab fa-telegram" style="color:#00B4F0;font-size:34px"></i></div>
+          <h3 style="font-weight:800;font-size:18px;color:#fff;margin:0 0 8px">Official Support Group</h3>
+          <p style="color:#D1D5DB;font-size:13px;margin:0 0 18px">Join our Telegram group for instant help from our team</p>
+          <a href="https://t.me/+adk1usHyKF4yYzQ0" target="_blank" class="btn" style="display:block;padding:14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;text-decoration:none"><i class="fab fa-telegram" style="margin-right:8px"></i>Join Telegram Support</a>
+        </div>
+        <div class="gc" style="padding:16px;margin-bottom:16px;display:flex;align-items:center;gap:14px">
+          <div style="width:44px;height:44px;background:rgba(0,180,240,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-users" style="color:#00B4F0;font-size:18px"></i></div>
+          <div style="flex:1"><h4 style="color:#fff;font-weight:700;font-size:14px;margin:0">Customer Chart Group</h4><p style="color:#9CA3AF;font-size:12px;margin:0">Community discussions &amp; updates</p></div>
+          <a href="https://t.me/+kH7QuzE6dp0xZmVk" target="_blank" class="btn" style="padding:8px 14px;border-radius:10px;font-size:12px;font-weight:700;color:#fff;text-decoration:none">Join</a>
+        </div>
+        <h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">FAQ</h3>
+        <div id="faq-list"></div>
+      </div>
+    </div>
+
+    <!-- BUY PAGE -->
+    <div id="page-buy" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">Investment Packages</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 14px">Choose your Samsung investment level</p>
+        <div style="display:flex;gap:8px;margin-bottom:18px;overflow-x:auto;padding-bottom:4px">
+          <button id="fb-all" onclick="filterPkgs(&#39;all&#39;)" class="btn" style="padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#fff;white-space:nowrap">All</button>
+          <button id="fb-1" onclick="filterPkgs(&#39;1&#39;)" style="padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#9CA3AF;background:rgba(255,255,255,.06);border:none;cursor:pointer;white-space:nowrap">Group 1</button>
+          <button id="fb-2" onclick="filterPkgs(&#39;2&#39;)" style="padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#9CA3AF;background:rgba(255,255,255,.06);border:none;cursor:pointer;white-space:nowrap">Group 2</button>
+          <button id="fb-3" onclick="filterPkgs(&#39;3&#39;)" style="padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#9CA3AF;background:rgba(255,255,255,.06);border:none;cursor:pointer;white-space:nowrap">Group 3</button>
+        </div>
+        <div id="pkg-grid" style="display:grid;gap:16px;padding-bottom:20px"></div>
+      </div>
+    </div>
+
+    <!-- TEAM PAGE -->
+    <div id="page-team" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">My Team</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">Your referral network</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:16px">
+          <div style="text-align:center;padding:14px;background:rgba(255,215,0,.08);border:1px solid rgba(255,215,0,.2);border-radius:14px"><p id="t-l1" style="color:#FBBF24;font-weight:900;font-size:22px;margin:0">0</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L1 Team</p><p style="color:#FBBF24;font-size:11px;font-weight:700;margin:0">30%</p></div>
+          <div style="text-align:center;padding:14px;background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);border-radius:14px"><p id="t-l2" style="color:#00B4F0;font-weight:900;font-size:22px;margin:0">0</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L2 Team</p><p style="color:#00B4F0;font-size:11px;font-weight:700;margin:0">2%</p></div>
+          <div style="text-align:center;padding:14px;background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:14px"><p id="t-l3" style="color:#4ade80;font-weight:900;font-size:22px;margin:0">0</p><p style="color:#9CA3AF;font-size:11px;margin:2px 0">L3 Team</p><p style="color:#4ade80;font-size:11px;font-weight:700;margin:0">1%</p></div>
+        </div>
+        <div class="gc" style="padding:14px;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center"><span style="color:#D1D5DB;font-weight:600;font-size:14px">Total Referral Earnings</span><span id="t-earn" style="color:#4ade80;font-weight:900;font-size:16px">0 UGX</span></div>
+        <div class="gc" style="padding:16px;margin-bottom:16px">
+          <h3 style="font-weight:700;font-size:14px;color:#fff;margin:0 0 14px">How It Works</h3>
+          <div style="display:flex;gap:12px;margin-bottom:12px"><div class="sg" style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0">L1</div><div><p style="color:#fff;font-weight:700;font-size:13px;margin:0">Direct Referrals – 30%</p><p style="color:#9CA3AF;font-size:12px;margin:2px 0 0">When friends you invite buy a package, you get 30% instantly</p></div></div>
+          <div style="display:flex;gap:12px;margin-bottom:12px"><div class="sg-r" style="width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0">L2</div><div><p style="color:#fff;font-weight:700;font-size:13px;margin:0">2nd Level – 2%</p><p style="color:#9CA3AF;font-size:12px;margin:2px 0 0">When 1st person your L1 invited invests, you earn 2%</p></div></div>
+          <div style="display:flex;gap:12px"><div style="width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#22c55e,#00B4F0);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;flex-shrink:0">L3</div><div><p style="color:#fff;font-weight:700;font-size:13px;margin:0">3rd Level – 1%</p><p style="color:#9CA3AF;font-size:12px;margin:2px 0 0">When 1st person your L2 invited invests, you earn 1%</p></div></div>
+        </div>
+        <h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">Your L1 Team</h3>
+        <div id="l1-list"></div>
+      </div>
+    </div>
+
+    <!-- WITHDRAW PAGE -->
+    <div id="page-withdraw" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">Withdraw</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 16px">Transfer your earnings</p>
+        <div class="sg" style="border-radius:20px;padding:20px;margin-bottom:16px"><p style="color:rgba(255,255,255,.7);font-size:12px;margin:0 0 4px">Available Balance</p><p id="w-bal" style="font-weight:900;font-size:26px;color:#fff;margin:0">0 UGX</p><p style="color:rgba(255,255,255,.6);font-size:11px;margin:4px 0 0">Min: 7,000 UGX | Tax: 18%</p></div>
+        <div id="w-wallet-info" style="margin-bottom:16px"></div>
+        <div style="margin-bottom:16px">
+          <label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Amount (UGX)</label>
+          <input type="number" id="w-amount" placeholder="Minimum 7,000 UGX" oninput="calcTax()" style="width:100%;padding:14px;margin-top:6px;font-size:14px"/>
+          <div id="tax-box" style="background:rgba(255,255,255,.04);border-radius:12px;padding:12px;margin-top:10px;display:none">
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="color:#9CA3AF;font-size:13px">Amount</span><span id="tx-amt" style="color:#fff;font-size:13px">0</span></div>
+            <div style="display:flex;justify-content:space-between;margin-bottom:6px"><span style="color:#9CA3AF;font-size:13px">Tax (18%)</span><span id="tx-tax" style="color:#f87171;font-size:13px">-0</span></div>
+            <div style="display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.08);padding-top:6px"><span style="color:#fff;font-weight:700;font-size:13px">You Receive</span><span id="tx-rcv" style="color:#4ade80;font-weight:800;font-size:13px">0</span></div>
+          </div>
+        </div>
+        <button onclick="doWithdraw()" id="w-btn" class="btn" style="width:100%;padding:15px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;margin-bottom:16px"><i class="fas fa-paper-plane" style="margin-right:8px"></i>Withdraw Now</button>
+        <div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:12px;padding:12px;margin-bottom:16px">
+          <p style="color:#FBBF24;font-weight:600;font-size:12px;margin:0 0 6px"><i class="fas fa-info-circle" style="margin-right:4px"></i>Withdrawal Rules</p>
+          <p style="color:#9CA3AF;font-size:12px;margin:0;line-height:1.6">• Minimum: 7,000 UGX per withdrawal<br/>• Tax: 18% deducted<br/>• Limit: 2 withdrawals per day<br/>• Processing: 2–24 hours<br/>• Balance deducted ONLY after Admin approval</p>
+        </div>
+        <h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">Withdrawal History</h3>
+        <div id="w-history"></div>
+      </div>
+    </div>
+
+    <!-- ADD WALLET PAGE -->
+    <div id="page-wallet" class="page scroll-a" style="padding:16px">
+      <div class="fade-in">
+        <h2 style="font-weight:800;font-size:20px;color:#fff;margin:0 0 4px">Add Wallet</h2>
+        <p style="color:#9CA3AF;font-size:13px;margin:0 0 18px">Set up your withdrawal account</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:18px">
+          <button id="wt-mtn" onclick="selWallet(&#39;MTN&#39;)" style="padding:16px;border-radius:16px;border:2px solid rgba(255,200,0,.5);background:rgba(255,200,0,.08);cursor:pointer;text-align:center;transition:all .2s">
+            <div style="width:44px;height:44px;background:rgba(255,200,0,.2);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px"><span style="color:#FBBF24;font-weight:900;font-size:14px">MTN</span></div>
+            <span style="color:#FBBF24;font-weight:700;font-size:13px">MTN Mobile Money</span>
+          </button>
+          <button id="wt-air" onclick="selWallet(&#39;Airtel&#39;)" style="padding:16px;border-radius:16px;border:2px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);cursor:pointer;text-align:center;transition:all .2s">
+            <div style="width:44px;height:44px;background:rgba(239,68,68,.15);border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 8px"><span style="color:#f87171;font-weight:900;font-size:14px">AIR</span></div>
+            <span style="color:#f87171;font-weight:700;font-size:13px">Airtel Money</span>
+          </button>
+        </div>
+        <div style="margin-bottom:14px"><label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Full Name</label><div style="position:relative;margin-top:6px"><i class="fas fa-user" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="text" id="wlt-name" placeholder="As registered on Mobile Money" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/></div></div>
+        <div style="margin-bottom:6px"><label style="font-size:11px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:.8px">Phone Number</label><div style="position:relative;margin-top:6px"><i class="fas fa-phone" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="tel" id="wlt-phone" oninput="detectNet()" placeholder="07XXXXXXXX" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"/></div><p id="net-detect" style="font-size:12px;margin:4px 0 14px;color:#00B4F0"></p></div>
+        <button onclick="saveWallet()" class="btn" style="width:100%;padding:15px;border-radius:14px;font-weight:800;font-size:15px;color:#fff;margin-bottom:16px"><i class="fas fa-save" style="margin-right:8px"></i>Save Wallet</button>
+        <div id="cur-wallet"></div>
+        <div style="background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);border-radius:12px;padding:12px"><p style="color:#00B4F0;font-size:12px;font-weight:600;margin:0 0 4px"><i class="fas fa-info-circle" style="margin-right:4px"></i>Note</p><p style="color:#9CA3AF;font-size:12px;margin:0">MTN: 076,077,078. Airtel: 070,075. System auto-detects your network.</p></div>
+      </div>
+    </div>
+
+  </div><!-- end pages -->
+
+  <!-- Bottom Nav -->
+  <div style="position:fixed;bottom:0;left:0;right:0;z-index:40;max-width:480px;margin:0 auto;background:rgba(10,14,26,.97);backdrop-filter:blur(15px);border-top:1px solid rgba(255,255,255,.07)">
+    <div style="display:flex;align-items:center;justify-content:space-around;padding:6px 4px 8px">
+      <button class="nav-item act" onclick="showPage(&#39;home&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-home" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Home</span></button>
+      <button class="nav-item" onclick="showPage(&#39;buy&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-shopping-bag" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Buy</span></button>
+      <button class="nav-item" onclick="showPage(&#39;team&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-users" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Team</span></button>
+      <button class="nav-item" onclick="showPage(&#39;mine&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-user" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Mine</span></button>
+      <button class="nav-item" onclick="showPage(&#39;withdraw&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-wallet" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Withdraw</span></button>
+      <button class="nav-item" onclick="showPage(&#39;support&#39;)" style="display:flex;flex-direction:column;align-items:center;padding:4px 10px;background:none;border:none;cursor:pointer"><i class="ni fas fa-headset" style="font-size:18px;margin-bottom:2px"></i><span class="nl">Support</span></button>
+    </div>
+  </div>
+</div><!-- end app -->
+
+<!-- ===== ADMIN PANEL ===== -->
+<div id="admin-sec" style="display:none;min-height:100vh;background:#0a0e1a">
+  <div style="position:sticky;top:0;z-index:40;background:rgba(10,14,26,.97);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.07);padding:10px 16px">
+    <div style="display:flex;align-items:center;justify-content:space-between;max-width:560px;margin:0 auto">
+      <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;background:linear-gradient(135deg,#dc2626,#991b1b);border-radius:10px;display:flex;align-items:center;justify-content:center"><i class="fas fa-shield-alt" style="color:#fff;font-size:14px"></i></div><div><p style="font-weight:800;font-size:13px;color:#fff;margin:0">ADMIN PANEL</p><p style="color:#f87171;font-size:11px;margin:0">Full Control</p></div></div>
+      <button onclick="exitAdmin()" style="padding:7px 14px;border-radius:10px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.25);color:#f87171;font-size:13px;font-weight:700;cursor:pointer"><i class="fas fa-times" style="margin-right:4px"></i>Exit</button>
+    </div>
+  </div>
+  <div style="position:sticky;top:56px;z-index:30;background:rgba(10,14,26,.95);padding:8px 16px;border-bottom:1px solid rgba(255,255,255,.05)">
+    <div style="display:flex;gap:8px;overflow-x:auto;max-width:560px;margin:0 auto;padding-bottom:2px">
+      <button id="at-pkg" onclick="aTab(&#39;pkg&#39;)" class="at active" style="padding:8px 14px;font-size:12px;font-weight:700;white-space:nowrap"><i class="fas fa-box" style="margin-right:4px"></i>Packages</button>
+      <button id="at-wd" onclick="aTab(&#39;wd&#39;)" class="at" style="padding:8px 14px;font-size:12px;font-weight:700;white-space:nowrap"><i class="fas fa-money-bill" style="margin-right:4px"></i>Withdrawals</button>
+      <button id="at-ref" onclick="aTab(&#39;ref&#39;)" class="at" style="padding:8px 14px;font-size:12px;font-weight:700;white-space:nowrap"><i class="fas fa-users" style="margin-right:4px"></i>Referrals</button>
+      <button id="at-gift" onclick="aTab(&#39;gift&#39;)" class="at" style="padding:8px 14px;font-size:12px;font-weight:700;white-space:nowrap"><i class="fas fa-gift" style="margin-right:4px"></i>Gift Codes</button>
+      <button id="at-mgr" onclick="aTab(&#39;mgr&#39;)" class="at" style="padding:8px 14px;font-size:12px;font-weight:700;white-space:nowrap"><i class="fas fa-cog" style="margin-right:4px"></i>Manage</button>
+    </div>
+  </div>
+  <div style="max-width:560px;margin:0 auto;padding:16px;padding-bottom:40px">
+    <div id="ac-pkg"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 14px">Pending Package Requests</h3><div id="apl"></div></div>
+    <div id="ac-wd" style="display:none"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 14px">Withdrawal Requests</h3><div id="awl"></div></div>
+    <div id="ac-ref" style="display:none"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 14px">Referral Chain Records</h3><div id="arl"></div></div>
+    <div id="ac-gift" style="display:none">
+      <button id="open-rd-btn" onclick="adminOpenRedeem()" class="btn" style="width:100%;padding:14px;border-radius:14px;font-weight:800;font-size:14px;color:#fff;margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:8px"><i class="fas fa-gift"></i>Open Redeem Gift Window (15 min)</button>
+      <div id="rd-admin-status" style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:12px;padding:12px;margin-bottom:14px;text-align:center;display:none"><p style="color:#4ade80;font-weight:700;font-size:14px;margin:0">Redeem Window OPEN</p><p id="rd-admin-tmr" style="color:#9CA3AF;font-size:12px;margin:4px 0 0">Closes in: 15:00</p></div>
+      <h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">Gift Code Submissions</h3><div id="agl"></div>
+    </div>
+    <div id="ac-mgr" style="display:none"><h3 style="font-weight:700;font-size:15px;color:#fff;margin:0 0 12px">All Packages</h3><div id="ampl"></div><h3 style="font-weight:700;font-size:15px;color:#fff;margin:16px 0 12px">All Users</h3><div id="aul"></div></div>
+  </div>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+
+<script>
+const FB_CFG={apiKey:"AIzaSyBQNOtEudTpplujtVLHzKO6l12fTNpZekU",authDomain:"samsungearning-55555.firebaseapp.com",databaseURL:"https://samsungearning-55555-default-rtdb.firebaseio.com",projectId:"samsungearning-55555",storageBucket:"samsungearning-55555.firebasestorage.app",messagingSenderId:"368529835542",appId:"1:368529835542:web:e3ebde5a4c45c546f15737"};
+firebase.initializeApp(FB_CFG);
+const auth=firebase.auth();
+const db=firebase.database();
+const SV=firebase.database.ServerValue.TIMESTAMP;
+
+// State
+let CU=null,UD=null,CP='home',payTmr=null,rdTmr=null,admRdTmr=null,selWlt='MTN',selPkg=null,selPayMeth=null;
+const NAV=['home','referral','mine','support','buy','team','withdraw','wallet'];
+const ADMIN_NAME='Nabakooza',ADMIN_PASS='nabakooza123';
+const PAY_INFO={MTN:{num:'0756406186',name:'Nabakooza Milly'},Airtel:{num:'0782031407',name:'Kyosiimire Joan'}};
+
+// Packages
+const PKGS=[
+  {id:'a05',g:1,name:'Galaxy A05',price:15000,daily:3000,dur:60,img:'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&q=75',col:'#1428A0',badge:'Starter'},
+  {id:'a15',g:1,name:'Galaxy A15',price:30000,daily:7000,dur:60,img:'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=75',col:'#0ea5e9',badge:'Popular'},
+  {id:'a25',g:2,name:'Galaxy A25',price:50000,daily:12500,dur:180,img:'https://images.unsplash.com/photo-1567581935884-3349723552ca?w=400&q=75',col:'#8b5cf6',badge:'Value'},
+  {id:'a35',g:2,name:'Galaxy A35',price:100000,daily:26000,dur:180,img:'https://images.unsplash.com/photo-1605236453806-6ff36851218e?w=400&q=75',col:'#ec4899',badge:'Pro'},
+  {id:'a55',g:2,name:'Galaxy A55',price:150000,daily:40000,dur:180,img:'https://images.unsplash.com/photo-1574755393849-623942496936?w=400&q=75',col:'#f59e0b',badge:'Advanced'},
+  {id:'s23fe',g:3,name:'Galaxy S23 FE',price:300000,daily:90000,dur:210,img:'https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?w=400&q=75',col:'#10b981',badge:'Elite'},
+  {id:'s24',g:3,name:'Galaxy S24',price:500000,daily:160000,dur:210,img:'https://images.unsplash.com/photo-1616348436168-de43ad0db179?w=400&q=75',col:'#3b82f6',badge:'Premium'},
+  {id:'s24p',g:3,name:'Galaxy S24+',price:800000,daily:280200,dur:210,img:'https://images.unsplash.com/photo-1565849904461-04a58ad377e0?w=400&q=75',col:'#6366f1',badge:'Super'},
+  {id:'s24u',g:3,name:'Galaxy S24 Ultra',price:1200000,daily:450000,dur:210,img:'https://images.unsplash.com/photo-1601972599720-36938d4ecd31?w=400&q=75',col:'#ef4444',badge:'Ultra'},
+  {id:'zf6',g:3,name:'Galaxy Z Flip6',price:1300000,daily:600000,dur:210,img:'https://images.unsplash.com/photo-1592750475338-74b7b21085ab?w=400&q=75',col:'#f97316',badge:'Luxury'},
+  {id:'zfold6',g:3,name:'Galaxy Z Fold6 VIP',price:2000000,daily:8805000,dur:210,img:'https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?w=400&q=75',col:'#d946ef',badge:'VIP'}
+];
+
+const FAQS=[
+  {q:'When will my package become active?',a:'After you send payment and Admin approves it, usually within 2–4 hours.'},
+  {q:'How do I withdraw my money?',a:'Go to Withdraw page, enter amount, and submit. Admin sends within 2–24 hours.'},
+  {q:'Can I buy multiple packages?',a:'Yes! Buy as many as you want to increase your daily earnings.'},
+  {q:'Why isn\'t my balance reducing?',a:'Balance only reduces AFTER Admin approves and sends your money. This protects you.'},
+  {q:'How do referral commissions work?',a:'When someone you invited buys a package, you instantly get 30% of the package price.'}
+];
+
+// ---- UTILS ----
+function fc(n){return new Intl.NumberFormat('en-UG').format(Math.round(n||0))+' UGX'}
+function fd(ts){if(!ts)return '---';return new Date(ts).toLocaleDateString('en-UG',{day:'numeric',month:'short',year:'numeric'})}
+function p2e(p){return p.replace(/\D/g,'')+('@samsungearning.ug')}
+function grc(uid){const c='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';let r='SAM';for(let i=0;i<6;i++)r+=c[Math.floor(Math.random()*c.length)];return r}
+function showToast(msg,t='info'){const el=document.getElementById('toast');const cols={success:'#22c55e',error:'#ef4444',info:'#00B4F0',warning:'#f59e0b'};el.style.background=cols[t]||cols.info;el.textContent=msg;el.classList.add('show');setTimeout(()=>el.classList.remove('show'),3200)}
+function togglePw(inp,ico){const el=document.getElementById(inp),ic=document.getElementById(ico);el.type=el.type==='password'?'text':'password';ic.className=el.type==='password'?'fas fa-eye':'fas fa-eye-slash'}
+function closeM(id){document.getElementById(id).style.display='none'}
+function empty(el,msg,icon='fas fa-inbox'){document.getElementById(el).innerHTML=`<div style="text-align:center;padding:32px;color:#6b7280"><i class="${icon}" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0">${msg}</p></div>`}
+
+// ---- AUTH ----
+function switchTab(t){
+  document.getElementById('f-login').style.display=t==='login'?'block':'none';
+  document.getElementById('f-reg').style.display=t==='reg'?'block':'none';
+  const tl=document.getElementById('tab-login'),tr=document.getElementById('tab-reg');
+  if(t==='login'){tl.className='btn';tl.style.cssText='flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#fff';tr.style.cssText='flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#6b7280;background:none;border:none;cursor:pointer'}
+  else{tr.className='btn';tr.style.cssText='flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#fff';tl.style.cssText='flex:1;padding:10px;border-radius:10px;font-weight:700;font-size:14px;color:#6b7280;background:none;border:none;cursor:pointer'}
+}
+
+async function doLogin(){
+  const ph=document.getElementById('l-phone').value.trim(),pw=document.getElementById('l-pass').value;
+  if(!ph||!pw){showToast('Please fill all fields','error');return}
+  const btn=document.getElementById('l-btn');btn.disabled=true;btn.innerHTML='<div class="spinner"></div>';
+  try{
+    const rem=document.getElementById('remember').checked;
+    await auth.setPersistence(rem?firebase.auth.Auth.Persistence.LOCAL:firebase.auth.Auth.Persistence.SESSION);
+    await auth.signInWithEmailAndPassword(p2e(ph),pw);
+  }catch(e){
+    let m='Login failed. Check your credentials.';
+    if(e.code==='auth/user-not-found')m='No account found with this phone number';
+    else if(e.code==='auth/wrong-password'||e.code==='auth/invalid-credential')m='Incorrect password';
+    showToast(m,'error');btn.disabled=false;btn.innerHTML='<i class="fas fa-sign-in-alt" style="margin-right:8px"></i>Login';
+  }
+}
+
+async function doRegister(){
+  const nm=document.getElementById('r-name').value.trim(),ph=document.getElementById('r-phone').value.trim(),pw=document.getElementById('r-pass').value,rc=document.getElementById('r-ref').value.trim()||new URLSearchParams(window.location.search).get('ref')||'';
+  if(!nm||!ph||!pw){showToast('Please fill all required fields','error');return}
+  if(pw.length<6){showToast('Password must be at least 6 characters','error');return}
+  const btn=document.getElementById('r-btn');btn.disabled=true;btn.innerHTML='<div class="spinner"></div>';
+  try{
+    const cred=await auth.createUserWithEmailAndPassword(p2e(ph),pw);
+    const uid=cred.user.uid;
+    let refId=null;
+    if(rc){const rs=await db.ref('users').orderByChild('referralCode').equalTo(rc).once('value');if(rs.exists())refId=Object.keys(rs.val())[0]}
+    await db.ref(`users/${uid}`).set({name:nm,phone:ph,email:p2e(ph),wallet:7000,todayEarnings:0,totalEarnings:0,referralEarnings:0,totalWithdrawals:0,totalInvested:0,referralCode:grc(uid),referredBy:refId||null,banned:false,newUser:true,createdAt:SV,lastCheckIn:0,withdrawCount:0,lastWithdrawDate:''});
+    if(refId)await trackRef(uid,refId);
+  }catch(e){
+    let m='Registration failed';
+    if(e.code==='auth/email-already-in-use')m='This phone number is already registered';
+    else if(e.code==='auth/weak-password')m='Password too weak (min 6 chars)';
+    showToast(m,'error');btn.disabled=false;btn.innerHTML='<i class="fas fa-user-plus" style="margin-right:8px"></i>Create Account';
+  }
+}
+
+async function doGoogle(){
+  const prov=new firebase.auth.GoogleAuthProvider();
+  try{
+    const res=await auth.signInWithPopup(prov);
+    if(res.additionalUserInfo.isNewUser){
+      const uid=res.user.uid;const rc=new URLSearchParams(window.location.search).get('ref')||'';
+      let refId=null;if(rc){const rs=await db.ref('users').orderByChild('referralCode').equalTo(rc).once('value');if(rs.exists())refId=Object.keys(rs.val())[0]}
+      await db.ref(`users/${uid}`).set({name:res.user.displayName||'Google User',phone:res.user.email,email:res.user.email,wallet:7000,todayEarnings:0,totalEarnings:0,referralEarnings:0,totalWithdrawals:0,totalInvested:0,referralCode:grc(uid),referredBy:refId||null,banned:false,newUser:true,createdAt:SV,lastCheckIn:0,withdrawCount:0,lastWithdrawDate:''});
+      if(refId)await trackRef(uid,refId);
+    }
+  }catch(e){if(e.code!=='auth/popup-closed-by-user')showToast('Google sign-in failed','error')}
+}
+
+function doLogout(){if(confirm('Logout?')){auth.signOut();CU=null;UD=null;showAuth()}}
+
+// ---- AUTH STATE ----
+auth.onAuthStateChanged(async(u)=>{
+  document.getElementById('ls').style.display='none';
+  if(u){
+    CU=u;
+    const sn=await db.ref(`users/${u.uid}`).once('value');
+    if(!sn.exists()){await auth.signOut();showAuth();return}
+    UD=sn.val();
+    if(UD.banned){await auth.signOut();showToast('Your account has been banned','error');showAuth();return}
+    await procDailyInc(u.uid);
+    await chkExpiry(u.uid);
+    const sn2=await db.ref(`users/${u.uid}`).once('value');UD=sn2.val();
+    showApp();
+    if(UD.newUser){await db.ref(`users/${u.uid}/newUser`).set(false);document.getElementById('m-welcome').style.display='flex'}
+  }else{showAuth()}
+});
+
+// ---- SECTION SHOW ----
+function showAuth(){document.getElementById('auth-sec').style.display='block';document.getElementById('app-sec').style.display='none';document.getElementById('admin-sec').style.display='none'}
+function showApp(){document.getElementById('auth-sec').style.display='none';document.getElementById('app-sec').style.display='block';document.getElementById('admin-sec').style.display='none';initApp()}
+function showAdminSec(){document.getElementById('auth-sec').style.display='none';document.getElementById('app-sec').style.display='none';document.getElementById('admin-sec').style.display='block';aTab('pkg')}
+
+// ---- APP INIT ----
+async function initApp(){
+  const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  document.getElementById('h-wallet').textContent=fc(UD.wallet);
+  document.getElementById('h-name').textContent=UD.name||'User';
+  showPage('home');renderFAQs();renderPkgs('all');renderFAQs();
+  const ur=new URLSearchParams(window.location.search).get('ref');if(ur)document.getElementById('r-ref').value=ur;
+}
+
+// ---- NAVIGATION ----
+function showPage(p){
+  document.querySelectorAll('.page').forEach(el=>el.classList.remove('active'));
+  const pg=document.getElementById(`page-${p}`);if(pg){pg.classList.add('active');setTimeout(()=>{},10)}
+  document.querySelectorAll('.nav-item').forEach(b=>{b.classList.remove('act');b.querySelectorAll('.ni,.nl').forEach(el=>{el.style.color='';})});
+  CP=p;
+  // Load page data
+  if(p==='home')loadHome();
+  else if(p==='buy')renderPkgs('all');
+  else if(p==='team')loadTeam();
+  else if(p==='referral')loadRef();
+  else if(p==='mine')loadMine();
+  else if(p==='withdraw')loadWithdraw();
+  else if(p==='wallet')loadWallet();
+  else if(p==='support')renderFAQs();
+}
+function navPrev(){const i=NAV.indexOf(CP);showPage(NAV[i<=0?NAV.length-1:i-1])}
+function navNext(){const i=NAV.indexOf(CP);showPage(NAV[(i+1)>=NAV.length?0:i+1])}
+
+// ---- HOME ----
+async function loadHome(){
+  if(!CU)return;
+  const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  document.getElementById('h-wallet').textContent=fc(UD.wallet);
+  document.getElementById('h-name').textContent=UD.name||'User';
+  document.getElementById('s-wallet').textContent=fc(UD.wallet);
+  document.getElementById('s-today').textContent=fc(UD.todayEarnings);
+  document.getElementById('s-total').textContent=fc(UD.totalEarnings);
+  document.getElementById('s-ref').textContent=fc(UD.referralEarnings);
+  document.getElementById('s-withdrawn').textContent=fc(UD.totalWithdrawals);
+  document.getElementById('s-invested').textContent=fc(UD.totalInvested);
+  const ps=await db.ref(`packages/${CU.uid}`).once('value');
+  let ac=0;if(ps.exists())ps.forEach(c=>{if(c.val().status==='active')ac++});
+  document.getElementById('s-active').textContent=ac;
+  renderActivePkgs(ps);
+}
+
+function renderActivePkgs(ps){
+  const c=document.getElementById('active-pkgs');
+  if(!ps||!ps.exists()){c.innerHTML=`<div style="text-align:center;padding:28px;color:#6b7280"><i class="fas fa-box-open" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0 0 8px">No active packages yet</p><button onclick="showPage('buy')" style="color:#00B4F0;font-size:13px;font-weight:700;background:none;border:none;cursor:pointer">Buy a package →</button></div>`;return}
+  let h='';let any=false;
+  ps.forEach(ch=>{
+    const pk=ch.val();if(pk.status!=='active')return;any=true;
+    const dl=Math.max(0,Math.ceil((pk.expiryDate-Date.now())/(864e5)));
+    const pct=Math.min(100,((pk.duration-dl)/pk.duration)*100);
+    h+=`<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <div><p style="color:#fff;font-weight:700;font-size:14px;margin:0">${pk.packageName}</p><p style="color:#9CA3AF;font-size:12px;margin:2px 0 0">Invested: ${fc(pk.price)}</p></div>
+        <span style="font-size:11px;font-weight:700;padding:4px 10px;border-radius:8px;background:rgba(34,197,94,.15);color:#4ade80">Active</span>
+      </div>
+      <div style="display:flex;gap:16px;font-size:12px;margin-bottom:8px">
+        <div><p style="color:#9CA3AF;margin:0">Daily</p><p style="color:#4ade80;font-weight:800;margin:2px 0 0">+${fc(pk.dailyEarn)}</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Days Left</p><p style="color:#00B4F0;font-weight:800;margin:2px 0 0">${dl}d</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Expires</p><p style="color:#fff;font-weight:600;margin:2px 0 0">${fd(pk.expiryDate)}</p></div>
+      </div>
+      <div style="height:5px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden"><div style="height:100%;background:linear-gradient(90deg,#1428A0,#00B4F0);width:${pct}%;border-radius:3px"></div></div>
+    </div>`;
+  });
+  c.innerHTML=any?h:`<div style="text-align:center;padding:28px;color:#6b7280"><i class="fas fa-box-open" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0 0 8px">No active packages yet</p><button onclick="showPage('buy')" style="color:#00B4F0;font-size:13px;font-weight:700;background:none;border:none;cursor:pointer">Buy a package →</button></div>`;
+}
+
+// ---- DAILY INCOME ----
+async function procDailyInc(uid){
+  const ps=await db.ref(`packages/${uid}`).once('value');if(!ps.exists())return;
+  const now=Date.now();let earned=0;const upd={};
+  ps.forEach(ch=>{
+    const pk=ch.val(),kid=ch.key;
+    if(pk.status!=='active')return;
+    const last=pk.lastIncomeAt||pk.buyDate||now;
+    const days=Math.floor((now-last)/864e5);
+    if(days<1)return;
+    if(now>pk.expiryDate){upd[`packages/${uid}/${kid}/status`]='expired';return}
+    const cap=Math.min(days,Math.floor((pk.expiryDate-last)/864e5));
+    if(cap>0){earned+=pk.dailyEarn*cap;upd[`packages/${uid}/${kid}/lastIncomeAt`]=now}
+  });
+  if(earned>0){
+    const us=await db.ref(`users/${uid}`).once('value');const ud=us.val();
+    const td=new Date().toDateString();
+    upd[`users/${uid}/wallet`]=(ud.wallet||0)+earned;
+    upd[`users/${uid}/totalEarnings`]=(ud.totalEarnings||0)+earned;
+    upd[`users/${uid}/todayEarnings`]=ud.lastDay===td?(ud.todayEarnings||0)+earned:earned;
+    upd[`users/${uid}/lastDay`]=td;
+  }
+  if(Object.keys(upd).length)await db.ref().update(upd);
+}
+async function chkExpiry(uid){
+  const ps=await db.ref(`packages/${uid}`).once('value');if(!ps.exists())return;
+  const now=Date.now();const upd={};
+  ps.forEach(ch=>{const pk=ch.val();if(pk.status==='active'&&now>pk.expiryDate)upd[`packages/${uid}/${ch.key}/status`]='expired'});
+  if(Object.keys(upd).length)await db.ref().update(upd);
+}
+
+// ---- REFERRAL ----
+async function trackRef(newUid,refId){
+  const tree={L1:refId,L2:null,L3:null};
+  const us=await db.ref(`users/${refId}`).once('value');
+  if(us.exists()){const l2=us.val().referredBy;if(l2){tree.L2=l2;const us2=await db.ref(`users/${l2}`).once('value');if(us2.exists()){const l3=us2.val().referredBy;if(l3)tree.L3=l3}}}
+  await db.ref(`refTree/${newUid}`).set(tree);
+}
+async function payRefComm(buyerUid,price){
+  const ts=await db.ref(`refTree/${buyerUid}`).once('value');if(!ts.exists())return;
+  const tr=ts.val();const upd={};const comms=[];
+  const rates={L1:.30,L2:.02,L3:.01};
+  for(const lv of['L1','L2','L3']){
+    const uid=tr[lv];if(!uid)continue;
+    const us=await db.ref(`users/${uid}`).once('value');if(!us.exists())continue;
+    const ud=us.val();const amt=Math.floor(price*rates[lv]);
+    upd[`users/${uid}/wallet`]=(ud.wallet||0)+amt;
+    upd[`users/${uid}/referralEarnings`]=(ud.referralEarnings||0)+amt;
+    upd[`users/${uid}/totalEarnings`]=(ud.totalEarnings||0)+amt;
+    comms.push({uid,level:lv,amount:amt});
+  }
+  if(Object.keys(upd).length){
+    await db.ref().update(upd);
+    const rid=db.ref('refChain').push().key;
+    await db.ref(`refChain/${rid}`).set({buyerUid,price,comms,at:SV});
+  }
+}
+
+// ---- LOAD PAGES ----
+async function loadRef(){
+  if(!CU||!UD)return;
+  const base=window.location.href.split('?')[0];
+  const lnk=`${base}?ref=${UD.referralCode}`;
+  document.getElementById('ref-link').textContent=lnk;
+  document.getElementById('ref-code').textContent=UD.referralCode;
+  document.getElementById('ref-earn').textContent=fc(UD.referralEarnings);
+  const l1=await db.ref('users').orderByChild('referredBy').equalTo(CU.uid).once('value');
+  const l1c=l1.exists()?l1.numChildren():0;
+  document.getElementById('ref-l1').textContent=`${l1c} people`;
+  document.getElementById('ref-l2').textContent='-- people';
+  document.getElementById('ref-l3').textContent='-- people';
+}
+function copyRef(){const lnk=document.getElementById('ref-link').textContent;navigator.clipboard.writeText(lnk).then(()=>showToast('Referral link copied!','success')).catch(()=>showToast('Please copy manually','error'))}
+function shareRef(){const lnk=document.getElementById('ref-link').textContent;if(navigator.share)navigator.share({title:'Samsung Earning Platform',text:'Join and earn daily! Use my referral:',url:lnk});else copyRef()}
+
+async function loadTeam(){
+  if(!CU)return;
+  const l1s=await db.ref('users').orderByChild('referredBy').equalTo(CU.uid).once('value');
+  const l1arr=[];if(l1s.exists())l1s.forEach(c=>l1arr.push({uid:c.key,...c.val()}));
+  document.getElementById('t-l1').textContent=l1arr.length;
+  let l2c=0;
+  for(const u of l1arr){const l2=await db.ref('users').orderByChild('referredBy').equalTo(u.uid).once('value');if(l2.exists())l2c+=l2.numChildren()}
+  document.getElementById('t-l2').textContent=l2c;
+  document.getElementById('t-l3').textContent='--';
+  const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  document.getElementById('t-earn').textContent=fc(UD.referralEarnings);
+  const lc=document.getElementById('l1-list');
+  if(!l1arr.length){lc.innerHTML=`<div style="text-align:center;padding:28px;color:#6b7280"><i class="fas fa-user-friends" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0 0 8px">No team members yet</p><button onclick="showPage('referral')" style="color:#00B4F0;font-size:13px;font-weight:700;background:none;border:none;cursor:pointer">Share your link →</button></div>`;return}
+  lc.innerHTML=l1arr.map(u=>`<div style="display:flex;align-items:center;gap:12px;padding:12px;background:rgba(255,255,255,.04);border-radius:12px;margin-bottom:8px"><div class="sg" style="width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="color:#fff;font-weight:800">${(u.name||'U')[0].toUpperCase()}</span></div><div style="flex:1"><p style="color:#fff;font-weight:700;font-size:14px;margin:0">${u.name||'User'}</p><p style="color:#9CA3AF;font-size:12px;margin:0">${u.phone||'---'}</p></div><span style="background:linear-gradient(135deg,#1428A0,#00B4F0);color:#fff;font-size:10px;font-weight:800;padding:3px 8px;border-radius:6px">L1</span></div>`).join('');
+}
+
+async function loadMine(){
+  if(!CU)return;
+  const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  document.getElementById('m-avatar').textContent=(UD.name||'U')[0].toUpperCase();
+  document.getElementById('m-name').textContent=UD.name||'User';
+  document.getElementById('m-phone').textContent=UD.phone||'---';
+  document.getElementById('m-since').textContent=fd(UD.createdAt);
+  // Check-in
+  const ci=UD.lastCheckIn||0,now=Date.now(),can=(now-ci)>=864e5;
+  const ciBtn=document.getElementById('ci-btn'),ciSt=document.getElementById('ci-status');
+  if(can){ciBtn.disabled=false;ciBtn.className='btn';ciBtn.style.cssText='padding:10px 18px;border-radius:12px;font-weight:800;font-size:13px;color:#fff;flex-shrink:0';ciSt.textContent='Tap to claim +100 UGX';ciSt.style.color='#00B4F0'}
+  else{const h=Math.ceil((ci+864e5-now)/3600000);ciBtn.disabled=true;ciBtn.style.cssText='padding:10px 18px;border-radius:12px;font-weight:800;font-size:13px;flex-shrink:0;background:rgba(255,255,255,.05);color:#6b7280;border:none;cursor:not-allowed';ciSt.textContent=`Come back in ${h}h`;ciSt.style.color='#6b7280'}
+  // Packages
+  const ps=await db.ref(`packages/${CU.uid}`).once('value');
+  let tc=0,ti=0;if(ps.exists())ps.forEach(c=>{tc++;ti+=c.val().price||0});
+  document.getElementById('m-pkgs').textContent=tc;
+  document.getElementById('m-invested').textContent=fc(ti);
+  renderMyProds(ps);
+  // Redeem
+  const rs=await db.ref('settings/redeemGift').once('value');
+  if(rs.exists()&&rs.val().active&&rs.val().expiresAt>Date.now()){
+    document.getElementById('rd-status').textContent='Window is open! Enter your code below.';
+    document.getElementById('rd-input').style.display='block';
+    if(rdTmr)clearInterval(rdTmr);
+    const exp=rs.val().expiresAt;
+    rdTmr=setInterval(()=>{const rem=exp-Date.now();if(rem<=0){clearInterval(rdTmr);document.getElementById('rd-status').textContent='Window closed.';document.getElementById('rd-input').style.display='none';return}const m=Math.floor(rem/60000),s=Math.floor((rem%60000)/1000);document.getElementById('rd-timer').textContent=`Closes in: ${m}:${String(s).padStart(2,'0')}`;},1000);
+  }else{document.getElementById('rd-status').textContent='Currently closed. Watch for announcements.';document.getElementById('rd-input').style.display='none'}
+}
+
+function renderMyProds(ps){
+  const c=document.getElementById('my-products');
+  if(!ps||!ps.exists()){c.innerHTML=`<div style="text-align:center;padding:24px;color:#6b7280"><i class="fas fa-box" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0">No packages yet</p></div>`;return}
+  let h='';
+  ps.forEach(ch=>{
+    const pk=ch.val();
+    const sc=pk.status==='active'?'#4ade80':pk.status==='pending'?'#FBBF24':'#6b7280';
+    const dl=pk.status==='active'?Math.max(0,Math.ceil((pk.expiryDate-Date.now())/864e5)):'--';
+    h+=`<div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:14px;padding:14px;margin-bottom:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <p style="color:#fff;font-weight:700;font-size:14px;margin:0">${pk.packageName}</p>
+        <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;color:${sc};background:${sc}20">${pk.status}</span>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+        <div><p style="color:#9CA3AF;margin:0">Buy Date</p><p style="color:#fff;margin:2px 0 0">${fd(pk.buyDate)}</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Expiry</p><p style="color:#fff;margin:2px 0 0">${fd(pk.expiryDate)}</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Daily Earn</p><p style="color:#4ade80;font-weight:800;margin:2px 0 0">+${fc(pk.dailyEarn)}</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Days Left</p><p style="color:#00B4F0;font-weight:800;margin:2px 0 0">${dl}</p></div>
+      </div>
+    </div>`;
+  });
+  c.innerHTML=h;
+}
+
+async function doCheckIn(){
+  if(!CU)return;
+  const sn=await db.ref(`users/${CU.uid}`).once('value');const ud=sn.val();
+  const now=Date.now();if((now-(ud.lastCheckIn||0))<864e5){showToast('Already checked in today!','error');return}
+  await db.ref(`users/${CU.uid}`).update({wallet:(ud.wallet||0)+100,todayEarnings:(ud.todayEarnings||0)+100,totalEarnings:(ud.totalEarnings||0)+100,lastCheckIn:now});
+  showToast('+100 UGX Daily Bonus Added!','success');
+  UD=(await db.ref(`users/${CU.uid}`).once('value')).val();
+  document.getElementById('h-wallet').textContent=fc(UD.wallet);
+  loadMine();
+}
+
+async function doRedeem(){
+  const code=document.getElementById('gift-input').value.trim();
+  if(!code){showToast('Please enter a gift code','error');return}
+  const rs=await db.ref('settings/redeemGift').once('value');
+  if(!rs.exists()||!rs.val().active||rs.val().expiresAt<Date.now()){showToast('Redeem window has closed','error');return}
+  await db.ref('giftCodes').push({uid:CU.uid,userName:UD.name,code,status:'pending',at:SV});
+  document.getElementById('gift-input').value='';
+  showToast('Code submitted! Waiting for admin approval...','success');
+}
+
+// ---- WITHDRAW ----
+async function loadWithdraw(){
+  if(!CU)return;
+  const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  document.getElementById('w-bal').textContent=fc(UD.wallet);
+  const wi=document.getElementById('w-wallet-info');
+  if(UD.walletInfo){wi.innerHTML=`<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:14px;display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;background:rgba(0,180,240,.15);border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fas fa-mobile-alt" style="color:#00B4F0"></i></div><div style="flex:1"><p style="color:#9CA3AF;font-size:11px;margin:0">Withdrawal Wallet</p><p style="color:#fff;font-weight:700;font-size:14px;margin:2px 0">${UD.walletInfo.name}</p><p style="color:#00B4F0;font-size:13px;margin:0">${UD.walletInfo.phone}</p></div><span style="background:rgba(0,180,240,.15);color:#00B4F0;font-size:11px;font-weight:800;padding:4px 10px;border-radius:8px">${UD.walletInfo.type}</span></div>`}
+  else{wi.innerHTML=`<div style="background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.2);border-radius:14px;padding:14px"><p style="color:#FBBF24;font-weight:700;font-size:13px;margin:0 0 4px"><i class="fas fa-exclamation-triangle" style="margin-right:4px"></i>No wallet added</p><p style="color:#9CA3AF;font-size:12px;margin:0 0 10px">Add your withdrawal wallet first</p><button onclick="showPage('wallet')" class="btn" style="width:100%;padding:12px;border-radius:12px;font-weight:700;font-size:13px;color:#fff">Add Wallet Now</button></div>`}
+  // History
+  const wh=document.getElementById('w-history');
+  const whs=await db.ref(`withdrawals/${CU.uid}`).once('value');
+  if(!whs.exists()){wh.innerHTML=`<div style="text-align:center;padding:24px;color:#6b7280"><i class="fas fa-history" style="font-size:28px;display:block;margin-bottom:8px"></i><p style="font-size:13px;margin:0">No withdrawals yet</p></div>`;return}
+  let arr=[];whs.forEach(c=>arr.unshift({id:c.key,...c.val()}));
+  wh.innerHTML=arr.map(w=>{const sc=w.status==='approved'?'#4ade80':w.status==='pending'?'#FBBF24':'#f87171';const net=Math.floor(w.amount*.82);return `<div style="background:rgba(255,255,255,.04);border-radius:12px;padding:12px;margin-bottom:8px"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:4px"><p style="color:#fff;font-weight:800;font-size:14px;margin:0">${fc(w.amount)}</p><span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;color:${sc};background:${sc}20">${w.status}</span></div><p style="color:#4ade80;font-size:12px;margin:0 0 2px">You receive: ${fc(net)} (after 18% tax)</p><p style="color:#6b7280;font-size:11px;margin:0">${fd(w.requestedAt)}</p></div>`}).join('');
+}
+
+function calcTax(){
+  const amt=parseInt(document.getElementById('w-amount').value)||0;
+  const tb=document.getElementById('tax-box');
+  if(amt>0){tb.style.display='block';const tax=Math.floor(amt*.18);document.getElementById('tx-amt').textContent=fc(amt);document.getElementById('tx-tax').textContent=`-${fc(tax)}`;document.getElementById('tx-rcv').textContent=fc(amt-tax)}
+  else tb.style.display='none';
+}
+
+async function doWithdraw(){
+  if(!CU||!UD)return;
+  const amt=parseInt(document.getElementById('w-amount').value);
+  if(!amt||amt<7000){showToast('Minimum withdrawal is 7,000 UGX','error');return}
+  if(!UD.walletInfo){showToast('Please add your withdrawal wallet first','error');showPage('wallet');return}
+  if((UD.wallet||0)<amt){showToast('Insufficient balance','error');return}
+  const ps=await db.ref(`packages/${CU.uid}`).once('value');
+  if(!ps.exists()){showToast('Buy a package first to withdraw','error');return}
+  const today=new Date().toDateString();
+  const wc=UD.lastWithdrawDate===today?(UD.withdrawCount||0):0;
+  if(wc>=2){showToast('Daily withdrawal limit reached (2 per day)','error');return}
+  const btn=document.getElementById('w-btn');btn.disabled=true;btn.innerHTML='<div class="spinner"></div>';
+  try{
+    const wid=db.ref(`withdrawals/${CU.uid}`).push().key;
+    await db.ref(`withdrawals/${CU.uid}/${wid}`).set({amount:amt,walletType:UD.walletInfo.type,walletPhone:UD.walletInfo.phone,walletName:UD.walletInfo.name,status:'pending',requestedAt:SV});
+    await db.ref(`users/${CU.uid}`).update({withdrawCount:wc+1,lastWithdrawDate:today});
+    document.getElementById('w-amount').value='';document.getElementById('tax-box').style.display='none';
+    showToast('Withdrawal submitted! Admin will process it.','success');
+    UD=(await db.ref(`users/${CU.uid}`).once('value')).val();
+    await loadWithdraw();
+  }catch(e){showToast('Failed to submit withdrawal','error')}
+  finally{btn.disabled=false;btn.innerHTML='<i class="fas fa-paper-plane" style="margin-right:8px"></i>Withdraw Now'}
+}
+
+// ---- WALLET ----
+async function loadWallet(){
+  if(!CU)return;const sn=await db.ref(`users/${CU.uid}`).once('value');UD=sn.val();
+  const cw=document.getElementById('cur-wallet');
+  if(UD.walletInfo){const w=UD.walletInfo;cw.innerHTML=`<div style="background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.2);border-radius:14px;padding:14px;margin-bottom:14px"><p style="color:#4ade80;font-weight:700;font-size:13px;margin:0 0 10px"><i class="fas fa-check-circle" style="margin-right:4px"></i>Current Wallet</p><div style="display:flex;align-items:center;gap:12px"><div style="width:38px;height:38px;background:rgba(0,180,240,.15);border-radius:10px;display:flex;align-items:center;justify-content:center"><i class="fas fa-mobile-alt" style="color:#00B4F0"></i></div><div><p style="color:#fff;font-weight:700;font-size:14px;margin:0">${w.name}</p><p style="color:#00B4F0;font-size:13px;margin:2px 0">${w.phone}</p><p style="color:#9CA3AF;font-size:12px;margin:0">${w.type} Mobile Money</p></div></div></div>`;
+    document.getElementById('wlt-name').value=w.name;document.getElementById('wlt-phone').value=w.phone;selWlt=w.type;updateWltUI();
+  }else cw.innerHTML='';
+}
+
+function selWallet(t){selWlt=t;updateWltUI()}
+function updateWltUI(){
+  const mb=document.getElementById('wt-mtn'),ab=document.getElementById('wt-air');
+  if(selWlt==='MTN'){mb.style.borderColor='#FBBF24';mb.style.background='rgba(255,200,0,.18)';ab.style.borderColor='rgba(255,255,255,.1)';ab.style.background='rgba(255,255,255,.04)'}
+  else{ab.style.borderColor='#f87171';ab.style.background='rgba(239,68,68,.18)';mb.style.borderColor='rgba(255,255,255,.1)';mb.style.background='rgba(255,255,255,.04)'}
+}
+
+function detectNet(){
+  const ph=document.getElementById('wlt-phone').value;const el=document.getElementById('net-detect');
+  if(ph.length<3){el.textContent='';return}
+  if(['076','077','078','039'].some(p=>ph.startsWith(p))){el.textContent='✓ Detected: MTN Mobile Money';el.style.color='#FBBF24';selWallet('MTN')}
+  else if(['070','075','041'].some(p=>ph.startsWith(p))){el.textContent='✓ Detected: Airtel Money';el.style.color='#f87171';selWallet('Airtel')}
+  else el.textContent='';
+}
+
+async function saveWallet(){
+  const nm=document.getElementById('wlt-name').value.trim(),ph=document.getElementById('wlt-phone').value.trim();
+  if(!nm||!ph){showToast('Please fill all fields','error');return}
+  if(ph.length<10){showToast('Invalid phone number','error');return}
+  await db.ref(`users/${CU.uid}`).update({walletInfo:{type:selWlt,name:nm,phone:ph}});
+  showToast('Wallet saved successfully!','success');
+  UD=(await db.ref(`users/${CU.uid}`).once('value')).val();
+  loadWallet();
+}
+
+// ---- BUY PACKAGES ----
+function renderPkgs(g){
+  const c=document.getElementById('pkg-grid');
+  const list=g==='all'?PKGS:PKGS.filter(p=>p.g===parseInt(g));
+  c.innerHTML=list.map(p=>{
+    const tot=p.daily*p.dur,roi=((tot/p.price)*100).toFixed(0);
+    return `<div class="pkg-card" style="border:1px solid rgba(255,255,255,.1)">
+      <div style="position:relative;height:180px;overflow:hidden;background:linear-gradient(135deg,${p.col}22,${p.col}44)">
+        <img src="${p.img}" alt="${p.name}" loading="lazy" style="width:100%;height:100%;object-fit:cover;opacity:.85" onerror="this.style.display='none'">
+        <div style="position:absolute;inset:0;background:linear-gradient(to bottom,transparent 30%,rgba(10,14,26,.9) 100%)"></div>
+        <div style="position:absolute;top:10px;right:10px;background:${p.col};color:#fff;font-size:11px;font-weight:800;padding:4px 10px;border-radius:20px">${p.badge}</div>
+        <div style="position:absolute;top:10px;left:10px;background:rgba(0,0,0,.5);color:#fff;font-size:11px;font-weight:600;padding:3px 9px;border-radius:8px">Group ${p.g}</div>
+        <div style="position:absolute;bottom:10px;left:14px"><p style="color:#fff;font-weight:900;font-size:17px;margin:0;text-shadow:0 2px 8px rgba(0,0,0,.5)">${p.name}</p></div>
+      </div>
+      <div style="padding:14px;background:rgba(255,255,255,.04)">
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;margin-bottom:12px">
+          <div style="text-align:center"><p style="color:#9CA3AF;font-size:11px;margin:0">Invest</p><p style="color:#fff;font-weight:800;font-size:13px;margin:3px 0 0">${fc(p.price)}</p></div>
+          <div style="text-align:center;border-left:1px solid rgba(255,255,255,.08);border-right:1px solid rgba(255,255,255,.08)"><p style="color:#9CA3AF;font-size:11px;margin:0">Daily</p><p style="color:#4ade80;font-weight:800;font-size:13px;margin:3px 0 0">+${fc(p.daily)}</p></div>
+          <div style="text-align:center"><p style="color:#9CA3AF;font-size:11px;margin:0">Days</p><p style="color:#00B4F0;font-weight:800;font-size:13px;margin:3px 0 0">${p.dur}d</p></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:12px;margin-bottom:12px">
+          <span style="color:#9CA3AF">Total: <b style="color:#FBBF24">${fc(tot)}</b></span>
+          <span style="color:#9CA3AF">ROI: <b style="color:#4ade80">${roi}%</b></span>
+        </div>
+        <button onclick="openBuyM(${JSON.stringify(p).replace(/"/g,'&quot;')})" class="btn" style="width:100%;padding:13px;border-radius:14px;font-weight:800;font-size:14px;color:#fff"><i class="fas fa-shopping-cart" style="margin-right:8px"></i>Buy Now – ${fc(p.price)}</button>
+      </div>
+    </div>`
+  }).join('');
+}
+
+function filterPkgs(g){
+  document.querySelectorAll('[id^="fb-"]').forEach(b=>{b.className='';b.style.cssText='padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#9CA3AF;background:rgba(255,255,255,.06);border:none;cursor:pointer;white-space:nowrap'});
+  const ab=document.getElementById(`fb-${g}`);ab.className='btn';ab.style.cssText='padding:8px 16px;border-radius:10px;font-size:13px;font-weight:700;color:#fff;white-space:nowrap';
+  renderPkgs(g);
+}
+
+function openBuyM(p){
+  selPkg=p;selPayMeth=null;
+  const old=document.getElementById('buy-modal');if(old)old.remove();
+  const div=document.createElement('div');div.id='buy-modal';div.className='modal-bg';
+  div.innerHTML=`<div class="modal-box" style="padding:24px;max-width:360px">
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px">
+      <div><h3 style="color:#fff;font-weight:800;font-size:17px;margin:0">${p.name}</h3><p style="color:#9CA3AF;font-size:13px;margin:2px 0 0">Investment: ${fc(p.price)}</p></div>
+      <button onclick="document.getElementById('buy-modal').remove()" style="width:32px;height:32px;background:rgba(255,255,255,.06);border:none;border-radius:8px;color:#9CA3AF;cursor:pointer;font-size:13px"><i class="fas fa-times"></i></button>
+    </div>
+    <div style="background:rgba(0,180,240,.1);border:1px solid rgba(0,180,240,.2);border-radius:14px;padding:14px;text-align:center;margin-bottom:16px">
+      <p style="color:#9CA3AF;font-size:12px;margin:0 0 4px">Daily Earnings</p>
+      <p style="color:#4ade80;font-weight:900;font-size:26px;margin:0">+${fc(p.daily)}</p>
+      <p style="color:#6b7280;font-size:12px;margin:4px 0 0">for ${p.dur} days</p>
+    </div>
+    <p style="color:#9CA3AF;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:0 0 10px">Select Payment Method</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px">
+      <button id="pm-mtn" onclick="selPayM('MTN')" style="padding:12px;border-radius:12px;border:2px solid rgba(255,200,0,.4);background:rgba(255,200,0,.07);cursor:pointer;text-align:center;transition:all .2s"><p style="color:#FBBF24;font-weight:900;font-size:16px;margin:0">MTN</p><p style="color:#FBBF24;font-size:11px;margin:2px 0 0">Mobile Money</p></button>
+      <button id="pm-air" onclick="selPayM('Airtel')" style="padding:12px;border-radius:12px;border:2px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);cursor:pointer;text-align:center;transition:all .2s"><p style="color:#f87171;font-weight:900;font-size:16px;margin:0">AIRTEL</p><p style="color:#f87171;font-size:11px;margin:2px 0 0">Airtel Money</p></button>
+    </div>
+    <p style="color:#9CA3AF;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.8px;margin:0 0 8px">Your Payment Phone Number</p>
+    <div style="position:relative;margin-bottom:6px"><i class="fas fa-phone" style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#6b7280;font-size:13px"></i><input type="tel" id="buy-ph" placeholder="07XXXXXXXX (number you'll pay from)" style="width:100%;padding:14px 14px 14px 40px;font-size:14px"></div>
+    <p style="color:#6b7280;font-size:12px;margin:0 0 14px">Enter the number you will use to make payment</p>
+    <button onclick="submitBuy()" class="btn" style="width:100%;padding:14px;border-radius:14px;font-weight:800;font-size:15px;color:#fff"><i class="fas fa-paper-plane" style="margin-right:8px"></i>Submit Payment Number</button>
+    <p style="color:#6b7280;font-size:11px;text-align:center;margin:10px 0 0">Company number appears for 15 minutes after submitting</p>
+  </div>`;
+  document.body.appendChild(div);
+}
+
+function selPayM(m){
+  selPayMeth=m;
+  const mb=document.getElementById('pm-mtn'),ab=document.getElementById('pm-air');
+  mb.style.borderColor=m==='MTN'?'#00B4F0':'rgba(255,200,0,.4)';mb.style.background=m==='MTN'?'rgba(0,180,240,.15)':'rgba(255,200,0,.07)';
+  ab.style.borderColor=m==='Airtel'?'#00B4F0':'rgba(255,255,255,.1)';ab.style.background=m==='Airtel'?'rgba(0,180,240,.15)':'rgba(255,255,255,.04)';
+}
+
+async function submitBuy(){
+  if(!selPkg){return}
+  const ph=document.getElementById('buy-ph').value.trim();
+  if(!selPayMeth){showToast('Please select a payment method','error');return}
+  if(!ph||ph.length<10){showToast('Please enter your payment phone number','error');return}
+  const exp=Date.now()+(15*60000);
+  const rid=db.ref('paymentRequests').push().key;
+  await db.ref(`paymentRequests/${rid}`).set({uid:CU.uid,userName:UD.name,userPhone:UD.phone,paymentMethod:selPayMeth,paymentPhone:ph,packageId:selPkg.id,packageName:selPkg.name,price:selPkg.price,dailyEarn:selPkg.daily,duration:selPkg.dur,status:'pending',submittedAt:SV,timerExpiry:exp});
+  const old=document.getElementById('buy-modal');if(old)old.remove();
+  showPayModal(selPayMeth,exp);
+}
+
+function showPayModal(m,exp){
+  const info=PAY_INFO[m];
+  document.getElementById('pay-details').innerHTML=`<p style="color:#9CA3AF;font-size:13px;margin:0 0 8px">Send payment to this ${m} number:</p><p style="color:#fff;font-weight:900;font-size:24px;margin:0 0 4px">${info.num}</p><p style="color:#00B4F0;font-weight:700;font-size:14px;margin:0">${info.name}</p><p style="color:#6b7280;font-size:12px;margin:6px 0 0">${m} Mobile Money</p>`;
+  document.getElementById('m-pay').style.display='flex';
+  if(payTmr)clearInterval(payTmr);
+  payTmr=setInterval(()=>{
+    const rem=exp-Date.now();
+    if(rem<=0){clearInterval(payTmr);document.getElementById('t-disp').textContent='EXPIRED';document.getElementById('t-bar').style.width='0%';document.getElementById('t-bar').style.background='#ef4444';setTimeout(()=>{closePayModal();showToast('Payment window expired. Please try again.','error')},1500);return}
+    const mn=Math.floor(rem/60000),sc=Math.floor((rem%60000)/1000),pct=(rem/(15*60000))*100;
+    document.getElementById('t-disp').textContent=`${String(mn).padStart(2,'0')}:${String(sc).padStart(2,'0')}`;
+    document.getElementById('t-bar').style.width=pct+'%';
+    if(pct<30){document.getElementById('t-bar').style.background='#ef4444';document.getElementById('t-disp').style.color='#f87171'}
+    else if(pct<60){document.getElementById('t-bar').style.background='#f59e0b';document.getElementById('t-disp').style.color='#FBBF24'}
+  },1000);
+}
+function closePayModal(){document.getElementById('m-pay').style.display='none';if(payTmr){clearInterval(payTmr);payTmr=null}document.getElementById('t-bar').style.width='100%';document.getElementById('t-bar').style.background='linear-gradient(90deg,#00B4F0,#1428A0)';document.getElementById('t-disp').style.color='#FBBF24';document.getElementById('t-disp').textContent='15:00'}
+
+// ---- MODALS ----
+function showAdminLogin(){document.getElementById('m-admin').style.display='flex'}
+function closeWelcome(){document.getElementById('m-welcome').style.display='none';setTimeout(()=>document.getElementById('m-rules').style.display='flex',300)}
+function closeRules(){document.getElementById('m-rules').style.display='none'}
+
+// ---- ADMIN ----
+async function doAdminLogin(){
+  const nm=document.getElementById('a-name').value.trim(),pw=document.getElementById('a-pass').value;
+  if(nm===ADMIN_NAME&&pw===ADMIN_PASS){closeM('m-admin');showAdminSec()}
+  else showToast('Invalid admin credentials','error');
+}
+function exitAdmin(){document.getElementById('admin-sec').style.display='none';if(CU)showApp();else showAuth()}
+
+function aTab(t){
+  ['pkg','wd','ref','gift','mgr'].forEach(x=>{document.getElementById(`ac-${x}`).style.display='none';const b=document.getElementById(`at-${x}`);b.className='at';b.style.background='rgba(255,255,255,.05)';b.style.color='#94A3B8'});
+  document.getElementById(`ac-${t}`).style.display='block';
+  const ab=document.getElementById(`at-${t}`);ab.className='at active';ab.style.background='linear-gradient(135deg,#1428A0,#00B4F0)';ab.style.color='#fff';
+  if(t==='pkg')loadAP();else if(t==='wd')loadAW();else if(t==='ref')loadAR();else if(t==='gift')loadAG();else if(t==='mgr')loadAM();
+}
+
+async function loadAP(){
+  const c=document.getElementById('apl');c.innerHTML='<div class="spinner" style="margin:32px auto"></div>';
+  const sn=await db.ref('paymentRequests').orderByChild('status').equalTo('pending').once('value');
+  if(!sn.exists()){empty('apl','No pending requests');return}
+  let list=[];sn.forEach(ch=>list.unshift({id:ch.key,...ch.val()}));
+  c.innerHTML=list.map(r=>{
+    const exp=r.timerExpiry<Date.now();const ago=Math.floor((Date.now()-r.submittedAt)/60000);
+    return `<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;margin-bottom:12px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px">
+        <p style="color:#fff;font-weight:700;font-size:14px;margin:0">${r.userName}</p>
+        <span style="font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;color:${exp?'#f87171':'#FBBF24'};background:${exp?'rgba(239,68,68,.15)':'rgba(245,158,11,.15)'}">${exp?'Timer Expired':`${ago}m ago`}</span>
+      </div>
+      <div style="background:rgba(0,180,240,.08);border:1px solid rgba(0,180,240,.2);border-radius:10px;padding:10px;margin-bottom:10px">
+        <p style="color:#00B4F0;font-size:11px;font-weight:700;margin:0 0 4px">CUSTOMER PAYMENT NUMBER</p>
+        <p style="color:#fff;font-weight:800;font-size:15px;margin:0">${r.paymentMethod}: ${r.paymentPhone}</p>
+        <p style="color:#9CA3AF;font-size:12px;margin:4px 0 0">User: ${r.userPhone}</p>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;margin-bottom:12px">
+        <div><p style="color:#9CA3AF;margin:0">Package</p><p style="color:#fff;font-weight:700;margin:2px 0 0">${r.packageName}</p></div>
+        <div><p style="color:#9CA3AF;margin:0">Amount</p><p style="color:#4ade80;font-weight:800;margin:2px 0 0">${fc(r.price)}</p></div>
+      </div>
+      <div style="display:flex;gap:8px">
+        <button onclick="approveP('${r.id}','${r.uid}',${JSON.stringify(r).replace(/"/g,'&quot;')})" style="flex:1;padding:10px;border-radius:10px;background:rgba(34,197,94,.2);border:1px solid rgba(34,197,94,.4);color:#4ade80;font-weight:700;font-size:13px;cursor:pointer"><i class="fas fa-check" style="margin-right:4px"></i>Approve</button>
+        <button onclick="rejectP('${r.id}')" style="flex:1;padding:10px;border-radius:10px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);color:#FBBF24;font-weight:700;font-size:13px;cursor:pointer"><i class="fas fa-times" style="margin-right:4px"></i>Reject</button>
+        <button onclick="delRec('paymentRequests','${r.id}',loadAP)" style="width:38px;padding:10px;border-radius:10px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);color:#f87171;cursor:pointer;font-size:13px"><i class="fas fa-trash"></i></button>
+      </div>
+    </div>`
+  }).join('');
+}
+
+async function approveP(rid,uid,r){
+  if(!confirm(`Approve ${r.packageName} for ${r.userName}?`))return;
+  const now=Date.now(),exp=now+(r.duration*864e5);
+  const pid=db.ref(`packages/${uid}`).push().key;
+  await db.ref(`packages/${uid}/${pid}`).set({packageName:r.packageName,price:r.price,dailyEarn:r.dailyEarn,duration:r.duration,status:'active',buyDate:now,expiryDate:exp,lastIncomeAt:now});
+  const us=await db.ref(`users/${uid}`).once('value');const ud=us.val();
+  await db.ref(`users/${uid}`).update({totalInvested:(ud.totalInvested||0)+r.price});
+  await payRefComm(uid,r.price);
+  await db.ref(`paymentRequests/${rid}`).update({status:'approved'});
+  showToast('Package approved! Daily income started.','success');loadAP();
+}
+async function rejectP(rid){if(!confirm('Reject?'))return;await db.ref(`paymentRequests/${rid}`).update({status:'rejected'});showToast('Rejected','success');loadAP()}
+async function delRec(col,id,cb){if(!confirm('Delete permanently?'))return;await db.ref(`${col}/${id}`).remove();showToast('Deleted','success');if(cb)cb()}
+
+async function loadAW(){
+  const c=document.getElementById('awl');c.innerHTML='<div class="spinner" style="margin:32px auto"></div>';
+  const us=await db.ref('users').once('value');let all=[];
+  if(us.exists()){const proms=[];us.forEach(uc=>{const uid=uc.key,un=uc.val();proms.push(db.ref(`withdrawals/${uid}`).orderByChild('status').equalTo('pending').once('value').then(ws=>{if(ws.exists())ws.forEach(w=>all.push({id:w.key,uid,userName:un.name,...w.val()}))}))});await Promise.all(proms)}
+  if(!all.length){empty('awl','No withdrawal requests');return}
+  all.sort((a,b)=>(b.requestedAt||0)-(a.requestedAt||0));
+  c.innerHTML=all.map(w=>{const net=Math.floor(w.amount*.82);return `<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;margin-bottom:12px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:10px"><p style="color:#fff;font-weight:700;font-size:14px;margin:0">${w.userName}</p><span style="color:#FBBF24;font-size:11px;font-weight:700;padding:3px 10px;border-radius:8px;background:rgba(245,158,11,.15)">Pending</span></div>
+    <div style="background:rgba(255,255,255,.04);border-radius:10px;padding:10px;margin-bottom:10px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px">
+      <div><p style="color:#9CA3AF;margin:0">Requested</p><p style="color:#fff;font-weight:800;margin:2px 0 0">${fc(w.amount)}</p></div>
+      <div><p style="color:#9CA3AF;margin:0">They Receive</p><p style="color:#4ade80;font-weight:800;margin:2px 0 0">${fc(net)}</p></div>
+      <div><p style="color:#9CA3AF;margin:0">Send To</p><p style="color:#fff;margin:2px 0 0">${w.walletType}: ${w.walletPhone}</p></div>
+      <div><p style="color:#9CA3AF;margin:0">Name</p><p style="color:#fff;margin:2px 0 0">${w.walletName}</p></div>
+    </div>
+    <div style="display:flex;gap:8px">
+      <button onclick="approveW('${w.id}','${w.uid}',${w.amount})" style="flex:1;padding:10px;border-radius:10px;background:rgba(34,197,94,.2);border:1px solid rgba(34,197,94,.4);color:#4ade80;font-weight:700;font-size:13px;cursor:pointer"><i class="fas fa-check" style="margin-right:4px"></i>Approve & Paid</button>
+      <button onclick="rejectW('${w.id}','${w.uid}')" style="flex:1;padding:10px;border-radius:10px;background:rgba(245,158,11,.15);border:1px solid rgba(245,158,11,.3);color:#FBBF24;font-weight:700;font-size:13px;cursor:pointer"><i class="fas fa-times" style="margin-right:4px"></i>Reject</button>
+      <button onclick="delRec('withdrawals/${w.uid}','${w.id}',loadAW)" style="width:38px;padding:10px;border-radius:10px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);color:#f87171;cursor:pointer;font-size:13px"><i class="fas fa-trash"></i></button>
+    </div>
+  </div>`}).join('');
+}
+
+async function approveW(wid,uid,amt){
+  if(!confirm(`Approve withdrawal of ${fc(amt)}? (Ensure money already sent)`))return;
+  const us=await db.ref(`users/${uid}`).once('value');const ud=us.val();
+  await db.ref(`withdrawals/${uid}/${wid}`).update({status:'approved',processedAt:SV});
+  await db.ref(`users/${uid}`).update({wallet:Math.max(0,(ud.wallet||0)-amt),totalWithdrawals:(ud.totalWithdrawals||0)+amt});
+  showToast('Approved & balance deducted','success');loadAW();
+}
+async function rejectW(wid,uid){if(!confirm('Reject?'))return;await db.ref(`withdrawals/${uid}/${wid}`).update({status:'rejected',processedAt:SV});showToast('Rejected','success');loadAW()}
+
+async function loadAR(){
+  const c=document.getElementById('arl');
+  const sn=await db.ref('refChain').once('value');
+  if(!sn.exists()){empty('arl','No referral records');return}
+  let list=[];sn.forEach(ch=>list.unshift({id:ch.key,...ch.val()}));
+  c.innerHTML=list.map(r=>`<div style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:14px;margin-bottom:10px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px"><p style="color:#fff;font-weight:700;font-size:14px;margin:0">Package: ${fc(r.price)}</p><p style="color:#9CA3AF;font-size:11px;margin:0">${fd(r.at)}</p></div>
+    ${(r.comms||[]).map(cm=>`<div style="display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.05);padding:6px 0"><span style="color:#9CA3AF;font-size:12px">${cm.level} Commission</span><span style="color:#4ade80;font-weight:700;font-size:12px">+${fc(cm.amount)}</span></div>`).join('')}
+    <button onclick="delRec('refChain','${r.id}',loadAR)" style="width:100%;padding:8px;border-radius:8px;background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.2);color:#f87171;font-size:12px;cursor:pointer;margin-top:8px"><i class="fas fa-trash" style="margin-right:4px"></i>Delete</button>
+  </div>`).join('');
+}
+
+async function adminOpenRedeem(){
+  const exp=Date.now()+(15*60000);
+  await db.ref('settings/redeemGift').set({active:true,expiresAt:exp});
+  document.getElementById('rd-admin-status').style.display='block';
+  document.getElementById('open-rd-btn').style.display='none';
+  showToast('Redeem window opened for 15 minutes!','success');
+  if(admRdTmr)clearInterval(admRdTmr);
+  admRdTmr=setInterval(()=>{const rem=exp-Date.now();if(rem<=0){clearInterval(admRdTmr);db.ref('settings/redeemGift').update({active:false});document.getElementById('rd-admin-status').style.display='none';document.getElementById('open-rd-btn').style.display='block';return}const m=Math.floor(rem/60000),s=Math.floor((rem%60000)/1000);const el=document.getElementById('rd-admin-tmr');if(el)el.textContent=`Closes in: ${m}:${String(s).padStart(2,'0')}`;},1000);
+  loadAG();
+}
+
+async function loadAG(){
+  const c=document.getElementById('agl');
+  const sn=await db.ref('giftCodes').orderByChild('status').equalTo('pending').once('value');
+  if(!sn.exists()){empty('agl','No code submissions','fas fa-gift');return}
+  let list=[];sn.forEach(ch=>list.unshift({id:ch.key,...ch.val()}));
+  c.innerHTML=list.map(g=>`<div style="background:rgba(255,255,255,.05);border-radius:14px;padding:14px;margin-bottom:10px">
+    <div style="display:flex;justify-content:space-between;margin-bottom:8px"><p style="color:#fff;font-weight:700;font-size:14px;margin:0">${g.userName}</p><span style="color:#FBBF24;font-size:11px">pending</span></div>
+    <p style="color:#9CA3AF;font-size:13px;margin:0 0 12px">Code: <b style="color:#fff;font-family:monospace">${g.code}</b></p>
+    <div style="display:flex;gap:8px">
+      <button onclick="approveGift('${g.id}','${g.uid}')" style="flex:1;padding:10px;border-radius:10px;background:rgba(34,197,94,.2);border:1px solid rgba(34,197,94,.4);color:#4ade80;font-weight:700;font-size:13px;cursor:pointer"><i class="fas fa-check" style="margin-right:4px"></i>True (+200 UGX)</button>
+      <button onclick="delRec('giftCodes','${g.id}',loadAG)" style="width:38px;padding:10px;border-radius:10px;background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.3);color:#f87171;cursor:pointer;font-size:13px"><i class="fas fa-trash"></i></button>
+    </div>
+  </div>`).join('');
+}
+
+async function approveGift(gid,uid){
+  const us=await db.ref(`users/${uid}`).once('value');const ud=us.val();
+  await db.ref(`users/${uid}`).update({wallet:(ud.wallet||0)+200,totalEarnings:(ud.totalEarnings||0)+200});
+  await db.ref(`giftCodes/${gid}`).update({status:'approved'});
+  showToast('+200 UGX gift approved!','success');loadAG();
+}
+
+async function loadAM(){
+  const us=await db.ref('users').once('value');let pkgs=[],usrs=[];
+  if(us.exists()){
+    const proms=[];
+    us.forEach(uc=>{const uid=uc.key,un=uc.val();usrs.push({uid,...un});proms.push(db.ref(`packages/${uid}`).once('value').then(ps=>{if(ps.exists())ps.forEach(p=>pkgs.push({id:p.key,uid,userName:un.name,...p.val()}))}))});
+    await Promise.all(proms);
+  }
+  const pc=document.getElementById('ampl');
+  if(!pkgs.length){empty('ampl','No packages found','fas fa-boxes')}
+  else pc.innerHTML=pkgs.map(p=>{const sc=p.status==='active'?'#4ade80':p.status==='pending'?'#FBBF24':'#6b7280';return `<div style="background:rgba(255,255,255,.04);border-radius:12px;padding:12px;margin-bottom:8px"><div style="display:flex;justify-content:space-between;margin-bottom:4px"><p style="color:#fff;font-weight:700;font-size:13px;margin:0">${p.packageName}</p><span style="color:${sc};font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;background:${sc}20">${p.status}</span></div><p style="color:#9CA3AF;font-size:12px;margin:0 0 8px">${p.userName} | ${fc(p.price)}</p><div style="display:flex;gap:8px"><button onclick="extPkg('${p.id}','${p.uid}')" style="flex:1;padding:8px;border-radius:8px;background:rgba(0,180,240,.15);border:none;color:#00B4F0;font-size:12px;font-weight:700;cursor:pointer"><i class="fas fa-plus" style="margin-right:4px"></i>Extend 30d</button><button onclick="delPkg('${p.id}','${p.uid}')" style="flex:1;padding:8px;border-radius:8px;background:rgba(239,68,68,.15);border:none;color:#f87171;font-size:12px;font-weight:700;cursor:pointer"><i class="fas fa-stop" style="margin-right:4px"></i>Delete</button></div></div>`}).join('');
+  const uc=document.getElementById('aul');
+  uc.innerHTML=usrs.map(u=>`<div style="display:flex;align-items:center;gap:10px;padding:10px;background:rgba(255,255,255,.04);border-radius:12px;margin-bottom:8px"><div class="sg" style="width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><span style="color:#fff;font-weight:800;font-size:13px">${(u.name||'U')[0].toUpperCase()}</span></div><div style="flex:1"><p style="color:#fff;font-weight:700;font-size:13px;margin:0">${u.name||'---'}</p><p style="color:#9CA3AF;font-size:12px;margin:0">${u.phone||u.email||'---'}</p><p style="color:#4ade80;font-size:12px;margin:0">${fc(u.wallet)}</p></div><button onclick="banU('${u.uid}',${u.banned||false})" style="padding:6px 12px;border-radius:8px;background:${u.banned?'rgba(34,197,94,.1)':'rgba(239,68,68,.1)'};border:none;color:${u.banned?'#4ade80':'#f87171'};font-size:12px;font-weight:700;cursor:pointer">${u.banned?'Unban':'Ban'}</button></div>`).join('');
+}
+
+async function extPkg(pid,uid){const d=parseInt(prompt('Days to extend?')||'0');if(!d||d<=0)return;const ps=await db.ref(`packages/${uid}/${pid}`).once('value');const pk=ps.val();await db.ref(`packages/${uid}/${pid}`).update({expiryDate:(pk.expiryDate||Date.now())+(d*864e5),duration:pk.duration+d,status:'active'});showToast(`Extended by ${d} days`,'success');loadAM()}
+async function delPkg(pid,uid){if(!confirm('Delete package?'))return;await db.ref(`packages/${uid}/${pid}`).remove();showToast('Deleted','success');loadAM()}
+async function banU(uid,cur){if(!confirm(`${cur?'Unban':'Ban'} user?`))return;await db.ref(`users/${uid}`).update({banned:!cur});showToast(`User ${cur?'unbanned':'banned'}`,'success');loadAM()}
+
+// ---- FAQs ----
+function renderFAQs(){
+  document.getElementById('faq-list').innerHTML=FAQS.map((f,i)=>`<div style="background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:12px;margin-bottom:8px;overflow:hidden"><button onclick="toggleFAQ(${i})" style="width:100%;text-align:left;padding:14px;display:flex;justify-content:space-between;align-items:center;background:none;border:none;cursor:pointer"><span style="color:#fff;font-size:13px;font-weight:500;padding-right:12px">${f.q}</span><i id="fi-${i}" class="fas fa-chevron-down" style="color:#9CA3AF;font-size:11px;transition:transform .2s;flex-shrink:0"></i></button><div id="fa-${i}" style="display:none;padding:0 14px 14px"><p style="color:#9CA3AF;font-size:13px;margin:0;line-height:1.6">${f.a}</p></div></div>`).join('');
+}
+function toggleFAQ(i){const a=document.getElementById(`fa-${i}`),ic=document.getElementById(`fi-${i}`);const op=a.style.display!=='none';a.style.display=op?'none':'block';ic.style.transform=op?'rotate(0deg)':'rotate(180deg)'}
+
+// ---- INIT ----
+window.addEventListener('DOMContentLoaded',()=>{
+  const ur=new URLSearchParams(window.location.search).get('ref');
+  if(ur){const ri=document.getElementById('r-ref');if(ri)ri.value=ur;switchTab('reg')}
+  updateWltUI();
+});
+</script>
+
+
+</body></html>
